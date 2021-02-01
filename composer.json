@@ -1,0 +1,23 @@
+{
+    "name": "thimarsola/goognet",
+    "description": "Website gooognet",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thiago Marsola",
+            "email": "thiago.marsola@goognet.com.br",
+            "role": "Developer",
+            "homepage": "https://goognet.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "phpmailer/phpmailer": "v6.1.7"
+    }
+}
