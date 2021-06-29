@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "image": "imagem-divulgacao-face-e-insta",
+      "name": "Divulgação Face & Insta",
+      "description": "Sua marca tem que estar presente no mundo digital, afinal milhares de pessoas estão lá"
+    },
+    {
+      "image": "imagem-divulgacao-google",
+      "name": "Divulgação Google",
+      "description": "Seu produto ou serviço presentes na maior rede de pesquisa do mundo"
+    },
+    {
+      "image": "imagem-criacao-website",
+      "name": "Criação Website",
+      "description": "Desenvolvimento de um site exclusivo para a sua empresa! Seu negócio no universo digital"
+    },
+    {
+      "image": "imagem-identidade-visual",
+      "name": "Identidade Visual",
+      "description": "Para sua marca ser reconhecida você precisa de uma identidade sólida e de destaque"
+    },
+    {
+      "image": "imagem-criacao-de-imagens",
+      "name": "Criação de Imagens",
+      "description": "Suas relações fortalecem sua marca! Não tenha apenas clientes, tenha fãs que valorizem sua marca"
+    },
+    {
+      "image": "imagem-criacao-ecommerce",
+      "name": "Criação E-commerce",
+      "description": "Fuja do passado! Sua empresa presente no universo digital, rompendo todas as barreiras"
+    }
+  ]
+}

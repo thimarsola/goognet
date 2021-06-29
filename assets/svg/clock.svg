@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #84ef2a;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-clock" data-name="Icon feather-clock" transform="translate(-2.25 -2.25)">
+    <path id="Caminho_2007" data-name="Caminho 2007" class="cls-1" d="M13,2.25A10.75,10.75,0,0,1,20.6,20.6,10.75,10.75,0,0,1,5.4,5.4,10.68,10.68,0,0,1,13,2.25Zm0,20A9.25,9.25,0,1,0,3.75,13,9.26,9.26,0,0,0,13,22.25Z"/>
+    <path id="Caminho_2008" data-name="Caminho 2008" class="cls-1" d="M22.3,18.351a.747.747,0,0,1-.335-.079l-4.3-2.15a.75.75,0,0,1-.415-.671V9a.75.75,0,0,1,1.5,0v5.987l3.886,1.943a.75.75,0,0,1-.336,1.421Z" transform="translate(-5.188 -2.2)"/>
+  </g>
+</svg>

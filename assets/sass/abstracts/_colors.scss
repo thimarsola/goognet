@@ -1,0 +1,55 @@
+$green: #87EA00;
+$neutral: #1b1b37;
+$g-blue: #176BEF;
+$g-red: #FF3E30;
+$g-yellow: #F7B529;
+$g-green: #179C52;
+$white: #fff;
+$gray: #f0efef;
+$dark: #010100;
+
+$colors: (
+    "green": (
+        100: mix(white, $green, 80%),
+        200: mix(white, $green, 60%),
+        300: mix(white, $green, 40%),
+        400: mix(white, $green, 20%),
+        500: $green,
+        600: mix(black, $green, 20%),
+        700: mix(black, $green, 40%),
+        800: mix(black, $green, 60%),
+        900: mix(black, $green, 80%),
+    ),
+    "neutral": (
+        100: mix(white, $neutral, 80%),
+        200: mix(white, $neutral, 60%),
+        300: mix(white, $neutral, 40%),
+        400: mix(white, $neutral, 20%),
+        500: $neutral,
+        600: mix(black, $neutral, 20%),
+        700: mix(black, $neutral, 40%),
+        800: mix(black, $neutral, 60%),
+        900: mix(black, $neutral, 80%),
+    ),
+    "g-blue": (
+        500: $g-blue
+    ),
+    "g-red": (
+        500: $g-red
+    ),
+    "g-yellow": (
+        500: $g-yellow
+    ),
+    "g-green": (
+        500: $g-green
+    ),
+    "white":(
+        500: $white
+    ),
+    "gray":(
+        500: $gray
+    ),
+    "dark":(
+        500: $dark
+    )
+);

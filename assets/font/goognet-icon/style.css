@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'goognet';
+  src:  url('../font/goognet-icon/fonts/goognet.eot?u82tos');
+  src:  url('../font/goognet-icon/fonts/goognet.eot?u82tos#iefix') format('embedded-opentype'),
+  url('../font/goognet-icon/fonts/goognet.ttf?u82tos') format('truetype'),
+  url('../font/goognet-icon/fonts/goognet.woff?u82tos') format('woff'),
+  url('../font/goognet-icon/fonts/goognet.svg?u82tos#goognet') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'goognet' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.goog-clock:before {
+  content: "\e90e";
+}
+.goog-mail:before {
+  content: "\e90f";
+}
+.goog-phone:before {
+  content: "\e910";
+}
+.goog-target:before {
+  content: "\e912";
+}
+.goog-star:before {
+  content: "\e90d";
+}
+.goog-behance:before {
+  content: "\e900";
+}
+.goog-briefing:before {
+  content: "\e901";
+}
+.goog-datas:before {
+  content: "\e902";
+}
+.goog-facebook:before {
+  content: "\e903";
+}
+.goog-instagram:before {
+  content: "\e904";
+}
+.goog-investiment:before {
+  content: "\e905";
+}
+.goog-linkedin:before {
+  content: "\e906";
+}
+.goog-logo:before {
+  content: "\e907";
+}
+.goog-meta:before {
+  content: "\e908";
+}
+.goog-otimization:before {
+  content: "\e909";
+}
+.goog-play:before {
+  content: "\e90a";
+}
+.goog-w3c:before {
+  content: "\e90b";
+}
+.goog-whatsapp:before {
+  content: "\e90c";
+}

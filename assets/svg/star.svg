@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eae100;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-star" data-name="Icon material-star" class="cls-1" d="M18,25.5,27.27,31,24.81,20.64,33,13.669l-10.785-.9L18,3l-4.215,9.771L3,13.669l8.19,6.971L8.73,31Z" transform="translate(-3 -3)"/>
+</svg>

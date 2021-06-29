@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115.262" height="84" viewBox="0 0 115.262 84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.136" y1="0.193" x2="0.94" y2="0.892" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#92fc34"/>
+      <stop offset="0.419" stop-color="#82fd2f"/>
+      <stop offset="1" stop-color="#28ba0d"/>
+    </linearGradient>
+  </defs>
+  <g id="vetor-hero-one" transform="translate(-110.738 -275)">
+    <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="42" cy="42" r="42" transform="translate(142 275)"/>
+    <path id="Caminho_2" data-name="Caminho 2" class="cls-2" d="M1825.974-758.563h-.047a1,1,0,0,1-.723-.36l-7.978-9.618a1,1,0,0,1,.131-1.408,1,1,0,0,1,1.408.131l7.277,8.773,6.509-6.509a1,1,0,0,1,.707-.293,1,1,0,0,1,.707.293l6.578,6.578,6.578-6.578a1,1,0,0,1,1.414,0l6.578,6.578,6.578-6.578a1,1,0,0,1,1.414,0l6.578,6.578,6.578-6.578a1,1,0,0,1,1.414,0l7.286,7.286a1,1,0,0,1,0,1.414,1,1,0,0,1-1.414,0l-6.578-6.578-6.578,6.578a1,1,0,0,1-1.414,0l-6.578-6.578-6.578,6.578a1,1,0,0,1-1.414,0l-6.578-6.578-6.578,6.578a1,1,0,0,1-1.414,0l-6.578-6.578-6.578,6.578A1,1,0,0,1,1825.974-758.563Z" transform="translate(-1706.258 1079.681)"/>
+  </g>
+</svg>
