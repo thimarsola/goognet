@@ -10,6 +10,7 @@
   font-display: block;
 }
 
+
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'goognet' !important;
@@ -28,14 +29,14 @@ i {
 .goog-clock:before {
   content: "\e90e";
 }
-.goog-mail:before {
+.goog-phone:before {
   content: "\e90f";
 }
-.goog-phone:before {
+.goog-target:before {
   content: "\e910";
 }
-.goog-target:before {
-  content: "\e912";
+.goog-mail:before {
+  content: "\e911";
 }
 .goog-star:before {
   content: "\e90d";

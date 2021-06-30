@@ -67,14 +67,16 @@ define("CONTACT", [
     "whatsapp" => [
         "number" => "(11) 23551552",
         "message" => "Olá Goognet, gostaria de maiores informações para o meu Marketing Digital",
-        "messageSimulator" => "Olá Goognet, gostaria de maiores informações para simular o meu Sucesso!!",
+        "messageSimulator" => "Olá Goognet, gostaria de maiores informações para simular o meu Sucesso!",
+        "messageCTA" => "Olá Goognet, gostaria de falar sobre o meu Projeto!",
+        "messageFAQ" => "Olá Goognet, eu ainda gostaria de tirar algumas dúvidas"
     ],
     "phone" => [
         "01" => "(11) 2355-1552",
     ],
     "mail" => "comercial@goognet.com.br",
-    "address" => "Rua Maria Alves Lorenzoni, 98 - Rudge Ramos - São Bernardo do Campo",
-    "addressLink" => "https://g.product/tropicalpet_?share",
+    "address" => "Rua Maria Alves Lorenzoni, 98 - SBC",
+    "addressLink" => "https://g.page/Goognet?share",
     "instagram" => "https://www.instagram.com/goognetsolucao/",
     "facebook" => "https://www.facebook.com/goognetsolucao/",
     "linkedin" => "https://www.linkedin.com/company/goognet/",

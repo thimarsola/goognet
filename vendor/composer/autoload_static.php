@@ -4,8 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd9de356e3a6e4ed8e5557e03906a704d
+class ComposerStaticInit4513e3abbb4346abf61b4e3764123ca8
 {
+    public static $files = array (
+        '226408d9ec47ba297fbb6abb53d22cd6' => __DIR__ . '/../..' . '/source/Config.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
@@ -14,6 +18,11 @@ class ComposerStaticInitd9de356e3a6e4ed8e5557e03906a704d
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'M' => 
+        array (
+            'MatthiasMullie\\PathConverter\\' => 29,
+            'MatthiasMullie\\Minify\\' => 22,
         ),
     );
 
@@ -26,13 +35,26 @@ class ComposerStaticInitd9de356e3a6e4ed8e5557e03906a704d
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'MatthiasMullie\\PathConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
+        ),
+        'MatthiasMullie\\Minify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd9de356e3a6e4ed8e5557e03906a704d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd9de356e3a6e4ed8e5557e03906a704d::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4513e3abbb4346abf61b4e3764123ca8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4513e3abbb4346abf61b4e3764123ca8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit4513e3abbb4346abf61b4e3764123ca8::$classMap;
 
         }, null, ClassLoader::class);
     }

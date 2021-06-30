@@ -4,7 +4,7 @@
         <div class="header__navbar">
             <!-- brand -->
             <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
-                <img src="<?= get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo <?= SITE['name']; ?>>">
+                <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
             </a>
 
             <div class="header__navbar__section">
