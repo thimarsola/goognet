@@ -44,10 +44,10 @@ define("SOCIAL", [
 define("MAIL", [
     "host" => "mail.goognet.com.br",
     "port" => "587",
-    "user" => "sender@goognet.com.br",
-    "passwd" => "Contato123*",
+    "user" => "@goognet.com.br",
+    "passwd" => "",
     "from_name" => "Goognet Solução Digital",
-    "from_email" => "sender@goognet.com.br"
+    "from_email" => "@goognet.com.br"
 ]);
 
 /**
