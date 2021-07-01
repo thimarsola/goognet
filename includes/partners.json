@@ -1,0 +1,39 @@
+{
+  "partners-top": [
+    {
+      "name": "Google Partner",
+      "image": "parceiro-google"
+    },
+    {
+      "name": "Facebook Partner",
+      "image": "parceiro-facebook"
+    },
+    {
+      "name": "Parceiro Locaweb Pro",
+      "image": "parceiro-locaweb"
+    },
+    {
+      "name": "Parceiro Tray Commerce",
+      "image": "parceiro-tray"
+    }
+  ],
+
+  "partners-bottom": [
+    {
+      "name": "Parceiro Loja Integrada",
+      "image": "parceiro-loja-integrada"
+    },
+    {
+      "name": "Parceiro Hospedagem Rapid Cloud",
+      "image": "parceiro-rapid-cloud"
+    },
+    {
+      "name": "Parceiro RD Station",
+      "image": "parceiro-rd-station"
+    },
+    {
+      "name": "Parceiro Mailchimp",
+      "image": "parceiro-mailchimp"
+    }
+  ]
+}
