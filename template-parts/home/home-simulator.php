@@ -22,7 +22,7 @@
 
                 <!-- body -->
                 <div class="simulator__row__content__body">
-                    <p>Esse é um simulador com dados retirados das <span>Ferramentas Google</span>, onde podemos mostrar possíveis cenários de quantidades de pessoas pesquisando pelo seu segmento,  retorno do investimento e muito mais!</p>
+                    <p>Esse é um simulador com dados retirados das <span><b>Ferramentas Google</b></span>, onde podemos mostrar possíveis cenários de quantidades de pessoas pesquisando pelo seu segmento,  retorno do investimento e muito mais!</p>
                     <?= whatsapp(formatPhone(CONTACT["whatsapp"]["number"]), CONTACT["whatsapp"]["messageSimulator"], 'Simule seu sucesso', 'btn btn-green-500', 'Simule o seu sucesso'); ?>
                 </div>
                 <!-- end of body -->

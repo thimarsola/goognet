@@ -1,5 +1,4 @@
 <section class="hero">
-    <div class="container">
         <!-- group -->
         <div class="hero__group">
             <!-- header -->
@@ -22,6 +21,7 @@
                 <div class="hero__group__timeline__card">
                     <p><?= $item['number']; ?></p>
                     <p><?= $item['description']; ?></p>
+                    <p><?= $item['mobile']; ?></p>
                 </div>
                 <!-- end of card -->
 
@@ -42,5 +42,4 @@
             <img src="<?= image('vetor-hero-two.svg'); ?>" alt="Vetor - <?= SITE['name']; ?>" loading="lazy">
         </div>
         <!-- end of vector -->
-    </div>
 </section>

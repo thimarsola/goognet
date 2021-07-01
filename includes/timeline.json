@@ -2,15 +2,18 @@
   "timeline": [
     {
       "number": 1,
-      "description": "Construa sua identidade visual"
+      "description": "Construa sua identidade visual",
+      "mobile": "Conheça"
     },
     {
       "number": 2,
-      "description": "Desenvolva sua base digital"
+      "description": "Desenvolva sua base digital",
+      "mobile": "Desenvolva"
     },
     {
       "number": 3,
-      "description": "Divulgue para os seus clientes"
+      "description": "Divulgue para os seus clientes",
+      "mobile": "Divulgue"
     }
   ]
 }
