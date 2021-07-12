@@ -89,6 +89,12 @@
                 &__image{
                     height: 25rem;
                 }
+
+                &__body{
+                    p{
+                        font-size: var(--fs-200);
+                    }
+                }
             }
         }
     }

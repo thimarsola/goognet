@@ -1,22 +1,32 @@
 <section class="blog">
     <!-- content -->
     <div class="blog__content bg-neutral-500">
-        <!-- header -->
-        <header class="blog__content__header">
-            <h2><span></span>Conheça o nosso blog</h2>
-        </header>
-        <!-- end of header -->
 
-        <!-- body -->
-        <div class="blog__content__body">
-            <p>Buscando mais conhecimento sobre <span class="bg-green-500">Marketing Digital?</span></p>
+        <!-- container -->
+        <div class="blog__content__container">
+            <!-- header -->
+            <header class="blog__content__container__header">
+                <h2><span></span>Conheça o nosso blog</h2>
+            </header>
+            <!-- end of header -->
 
-            <a href="<?= get_the_permalink(get_page_by_title('Blog')); ?>">
-                <i class="goog-play"></i>
-                Dê o play no seu conhecimento
-            </a>
+            <!-- body -->
+            <div class="blog__content__container__body">
+                <p>Buscando mais conhecimento sobre <span><b>Marketing Digital?</b></span></p>
+
+                <a href="<?= get_the_permalink(get_page_by_title('Blog')); ?>">
+                    <span>
+                        <i class="goog-play"></i>
+                        Dê o play no seu conhecimento
+                    </span>
+                </a>
+            </div>
+
+            <img src="<?= image('vetor-blog.svg'); ?>" alt="Dê o play no seu conhecimento - Blog <?= SITE['name']; ?>">
+            <!-- end of body -->
         </div>
-        <!-- end of body -->
+        <!-- end of container -->
+
     </div>
     <!-- end of content -->
 

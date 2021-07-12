@@ -1,49 +1,107 @@
 @use '../abstracts' as *;
 
 .footer{
-    font-size: 1.4rem;
+    position: relative;
 
-    &__logo{
+    &::before{
+        position: absolute;
+        top: -4.2rem;
+        left: 0;
+        content: '';
+        display: block;
+        width: 4.2rem;
+        height: 8.4rem;
+        background:{
+            image: url("../images/vetor-footer.svg");
+            size: contain;
+            position: center right;
+            repeat: no-repeat;
+        }
+    }
+
+    &__content{
         @include padding(var(--fs-600));
-
-        .container{
-            display: flex;
-            justify-content: center;
-        }
-
-        img{
-            height: var(--fs-1000);
-        }
-    }
-
-    &__copyright{
-        @include padding(var(--fs-100));
-        text-align: center;
-    }
-
-    &__developer{
         color: var(--clr-white-500);
 
         &__row{
-            @include padding(var(--fs-100));
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+            gap: calc(var(--gap-lg) * 1.5) var(--gap-lg);
+
+            h2{
+                margin-bottom: var(--fs-200);
+                font-size: var(--fs-300);
+                color: var(--clr-green-500);
+            }
+            font-size: 1.4rem;
+            text-align: justify;
+
+            &__logo{
+                img{
+                    margin-bottom: var(--fs-200);
+                    max-width: 18.6rem;
+                    width: 100%;
+                }
+            }
+
+            &__sitemap{
+                &__nav{
+                    ul{
+                        display: inline-block;
+                        li{
+                            &:not(:last-child){
+                                margin-bottom: var(--fs-200);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__midias{
+                &__body{
+                    ul{
+                        display: flex;
+                        font-size: var(--fs-400);
+
+                        li{
+                            &:not(:last-child){
+                                margin-right: var(--fs-300);
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul{
+                li{
+                    a{
+                        color: inherit;
+                        @include transition(color);
+
+                        &:hover{
+                            color: var(--clr-green-500);
+                            @include transition(color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__developer{
+        color: var(--clr-neutral-500);
+        font-size: 1.4rem;
+
+        &__row{
+            @include padding(1.2rem);
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             line-height: 1;
-
-            &__goognet{
-                a{
-                    color: inherit;
-                    @include transition(color);
-
-                    &:hover{
-                        color: var(--clr-orange-900);
-                        @include transition(color);
-                    }
-                }
-            }
 
             &__validator{
                 a{
@@ -59,7 +117,7 @@
                     }
 
                     &:hover{
-                        color: var(--clr-orange-900);
+                        color: var(--clr-green-800);
                         @include transition(color);
                     }
                 }
@@ -67,17 +125,18 @@
         }
     }
 
-    //breakpoint 375px
-    @include bp(375px){
+    //breakpoint 390px
+    @include bp(390px){
         &__developer{
             &__row{
                 padding: var(--fs-300) 0;
                 text-align: center !important;
 
-                &__goognet{
+                &__agency{
+                    margin-bottom: var(--fs-200);
                     flex-basis: 100%;
-                    margin-bottom: var(--fs-100);
                 }
+
                 &__validator{
                     flex-basis: 100%;
                 }

@@ -6,16 +6,20 @@
     </a>
     <!-- end of image -->
 
-    <!-- header -->
-    <header class="projects__container__behance__card__header">
-        <h3><?= get_the_title(); ?></h3>
-    </header>
-    <!-- end of header -->
+    <!-- content -->
+    <div class="projects__container__behance__card__content">
+        <!-- header -->
+        <header class="projects__container__behance__card__content__header">
+            <h3><?= get_the_title(); ?></h3>
+        </header>
+        <!-- end of header -->
 
-    <!-- body -->
-    <div class="projects__container__behance__card__body">
-        <p><?php the_field('description'); ?></p>
+        <!-- body -->
+        <div class="projects__container__behance__card__content__body">
+            <p><?php the_field('description'); ?></p>
+        </div>
+        <!-- end of body -->
     </div>
-    <!-- end of body -->
+    <!-- end of content -->
 </article>
 <!-- end of card -->

@@ -70,7 +70,7 @@
                 &--animation {
                     span{
                         &::after{
-                            animation: animationSpanAbout ease-in-out 500ms forwards;
+                            animation: animationSpanSimulator ease-in-out 500ms forwards;
                         }
                     }
                 }
@@ -129,7 +129,19 @@
     @include mq(sm){
         &__row{
             grid-template-columns: 1fr;
-            gap: calc(var(--gap-lg) * 3);
+            //gap: 0;
+
+            &__content{
+                &__header{
+                    &__icon{
+                        display: none;
+                    }
+                }
+            }
+
+            &__image{
+                order: -1;
+            }
         }
     }
 }

@@ -101,7 +101,13 @@
 
     //breakpoint mobile
     @include mq(sm){
+
         &__content{
+            & > p{
+                font-size: var(--fs-300);
+                text-align: left;
+            }
+
             &__group{
                 p{
                     font-size: 1.6rem;

@@ -32,7 +32,7 @@
     <meta property="og:site_name" content="<?= SITE["name"] ?>"> <?php wp_head(); ?>
 </head>
 
-<body id="home" <?php body_class(); ?>>
+<body id="home" >
 <?php
 if (function_exists('custom_wp_body_open')) {
     wp_body_open();

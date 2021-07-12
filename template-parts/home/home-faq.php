@@ -1,7 +1,7 @@
 <section id="duvidas-frequentes" class="faq">
 
     <!-- header -->
-    <header class="faq__header bg-neutral-5000">
+    <header class="faq__header bg-neutral-500">
         <div class="container">
             <h2>Perguntas frequentes - <abbr title="Frequently Asked Question">FAQ</abbr></h2>
             <p>Principais dúvidas na hora de contar uma Agência de Marketing Digital</p>

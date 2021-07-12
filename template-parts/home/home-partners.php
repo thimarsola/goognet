@@ -6,7 +6,7 @@
     <!-- end of header -->
 
     <!-- row -->
-    <div class="partners__row">
+    <div class="partners__row__top">
         <?php
         $jsonPartnersTop = file_get_contents(__DIR__ . '/../../includes/partners.json');
         $partnersListTop = json_decode($jsonPartnersTop, true);
@@ -14,7 +14,7 @@
         foreach ($partnersListTop['partners-top'] as $partnerTop):
         ?>
         <!-- card -->
-        <div class="partners__row__card">
+        <div class="partners__row__top__card">
             <picture>
                 <source srcset="<?= image($partnerTop['image'] . '.webp'); ?>" type="image/webp">
                 <img src="<?= image($partnerTop['image'] . '.png'); ?>" alt="<?= SITE['name'] . " - " . $partnerTop['name']; ?>" loading="lazy">
@@ -26,7 +26,7 @@
     <!-- end of row -->
 
     <!-- row -->
-    <div class="partners__row">
+    <div class="partners__row__bottom">
         <?php
         $jsonPartnersBottom = file_get_contents(__DIR__ . '/../../includes/partners.json');
         $partnersListBottom = json_decode($jsonPartnersBottom, true);
@@ -34,7 +34,7 @@
         foreach ($partnersListBottom['partners-bottom'] as $partnerBottom):
         ?>
         <!-- card -->
-        <div class="partners__row__card">
+        <div class="partners__row__bottom__card">
             <picture>
                 <source srcset="<?= image($partnerBottom['image'] . '.webp'); ?>" type="image/webp">
                 <img src="<?= image($partnerBottom['image'] . '.png'); ?>" alt="<?= SITE['name'] . " - " . $partnerBottom['name']; ?>" loading="lazy">

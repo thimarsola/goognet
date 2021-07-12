@@ -11,10 +11,9 @@
 
             <!-- body -->
             <div class="projects__container__content__body">
-                <p>Nosso time de desenvolvimento faz parte de uma estrutura forte, jovem e muito atualizada, para formar os melhores cases do mercado.</p>
-                <p>Conheça nossos últimos projetos!</p>
+                <p>Nosso time de desenvolvimento faz parte de uma estrutura forte, jovem e muito atualizada, para formar os melhores cases do mercado. Conheça nossos últimos projetos!</p>
 
-                <a href="<?= get_permalink(get_page_by_title('')); ?>" class="btn btn-green-500">Mais projetos</a>
+                <a href="<?= CONTACT['behance']; ?>" class="btn btn-green-500" target="_blank" title="Conheça todos os nossos projetos">Mais projetos</a>
             </div>
             <!-- end of body -->
         </div>

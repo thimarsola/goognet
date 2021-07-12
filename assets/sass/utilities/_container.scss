@@ -3,7 +3,7 @@
 .container {
     display: block;
     margin: 0 auto;
-    padding: 0 calc(var(--gap) * 2);
+    padding: 0 var(--gap-lg);
     width: 100%;
 
     @include breakpoint(sm) {

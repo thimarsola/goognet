@@ -7,6 +7,7 @@ $g-green: #179C52;
 $white: #fff;
 $gray: #f0efef;
 $dark: #010100;
+$yellow: #EAE100;
 
 $colors: (
     "green": (
@@ -51,5 +52,8 @@ $colors: (
     ),
     "dark":(
         500: $dark
+    ),
+    "yellow":(
+        500: $yellow
     )
 );

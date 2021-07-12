@@ -6,12 +6,12 @@
     <!-- content -->
     <div class="footer__content bg-neutral-500">
         <div class="container">
-            <!-- row -->
+            <!-- row --><!---->
             <div class="footer__content__row">
                 <!-- logo -->
                 <div class="footer__content__row__logo">
                     <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
-                    <p><small>Nosso trabalho é detectar o problema e redefinir seus objetivos para encontrar a solução ideal para o seu negócio</small></p>
+                    <p>Nosso trabalho é detectar o problema e redefinir seus objetivos para encontrar a solução ideal para o seu negócio</p>
                 </div>
                 <!-- end of logo -->
 
@@ -25,7 +25,7 @@
 
                     <!-- nav -->
                     <div class="footer__content__row__sitemap__nav">
-                        <nav class="header__navbar__section__container__nav">
+                        <nav class="footer__content__row__sitemap__nav__container">
                             <h3 class="d-none">Menu de Navegação</h3>
                             <?php
                             if(is_home()){
@@ -107,7 +107,12 @@
 
             <!-- row -->
             <div class="footer__developer__row">
-                <p>Agência especializada em <b>Marketing Digital</b></p>
+
+                <!-- agency -->
+                <div class="footer__developer__row__agency">
+                    <p>Agência especializada em <b>Marketing Digital</b></p>
+                </div>
+                <!-- end of agency -->
 
                 <!-- validator -->
                 <?php if(!is_404()): ?>

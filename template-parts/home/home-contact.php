@@ -1,17 +1,18 @@
 <section class="contact">
-    <div class="container">
+    <!-- row -->
+    <div class="contact__row">
 
         <!-- content -->
-        <div class="contact__content">
+        <div class="contact__row__content">
             <!-- header -->
-            <header class="contact__content__header">
+            <header class="contact__row__content__header">
                 <h2>Vamos começar um novo projeto?</h2>
                 <p>Preencha o formulário abaixo e envio para nós sua mensagem. Teremos o maior prazer em lhe responder o mais breve possível.</p>
             </header>
             <!-- end of header -->
 
             <!-- form -->
-            <div class="contact__content__form">
+            <div class="contact__row__content__form">
                 <h3>Como podemos te contatar?</h3>
 
                 <form id="form" method="POST" enctype="multipart/form-data">
@@ -23,36 +24,36 @@
                     <!-- end of group -->
 
                     <!-- group -->
-                    <div class="contact__content__form__group">
+                    <div class="contact__row__content__form__group">
                         <label for="email" class="d-none">E-mail</label>
                         <input type="email" name="email" placeholder="E-mail" id="email" required>
                     </div>
                     <!-- end of group -->
 
                     <!-- group -->
-                    <div class="contact__content__form__group">
+                    <div class="contact__row__content__form__group">
                         <label for="phone" class="d-none">Telefone | Whatsapp</label>
                         <input type="text" name="phone" placeholder="Telefone | Whatsapp" id="phone" required>
                     </div>
                     <!-- end of group -->
 
                     <!-- group -->
-                    <div class="contact__content__form__group">
+                    <div class="contact__row__content__form__group">
                         <label for="message" class="d-none">Escreva sua mensagem</label>
                         <textarea id="message" name="message" cols="50" rows="2" placeholder="Escreva sua mensagem"></textarea>
                     </div>
                     <!-- end of group -->
 
                     <!-- status -->
-                    <div class="contact__content__form__status">
-                        <div class="d-none contact__content__form__status--loading">
+                    <div class="contact__row__content__form__status">
+                        <div class="d-none contact__row__content__form__status--loading">
                             <img src="<?= image('spinner.svg'); ?>" alt="Carregando" loading="lazy">
                         </div>
                     </div>
                     <!-- end of status -->
 
                     <!-- button -->
-                    <div class="contact__content__form__button">
+                    <div class="contact__row__content__form__button">
                         <button id="button" class="btn btn-green-500" type="submit" name="submit" value="submit">Enviar</button>
                     </div>
                     <!-- end of button -->
@@ -63,23 +64,23 @@
         <!-- end of content -->
 
         <!-- information -->
-        <div class="contact__information">
+        <div class="contact__row__information">
             <!-- content -->
-            <div class="contact__information__content">
+            <div class="contact__row__information__content">
                 <!-- logo -->
-                <div class="contact__information__content__logo">
-                    <img src="<?= image('logo-destaque.svg') ?>" alt="Logo <?= SITE['name']; ?>">
+                <div class="contact__row__information__content__logo">
+                    <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>">
                 </div>
                 <!-- end of logo -->
 
                 <!-- text -->
-                <div class="contact__information__content__text">
+                <div class="contact__row__information__content__text">
                     <p>Encontre abaixo todos os meios de contato com a sua agência. Estaremos a disposição para sempre atendê-lo!</p>
                 </div>
                 <!-- end of text -->
 
                 <!-- group -->
-                <div class="contact__information__content__group">
+                <div class="contact__row__information__content__group">
                     <ul>
                         <!-- mail -->
                         <li>
@@ -131,46 +132,51 @@
             <!-- end of content -->
 
             <!-- midias -->
-            <div class="contact__information__midias">
-                <h2>Siga a Goog!</h2>
+            <div class="contact__row__information__midias">
+                <!-- container -->
+                <div class="contact__row__information__midias__container">
+                    <h2>Siga a Goog!</h2>
 
-                <ul>
-                    <!-- instagram -->
-                    <li>
-                        <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank">
-                            <i class="goog-instagram"></i>
-                        </a>
-                    </li>
-                    <!-- end of instagram -->
+                    <ul>
+                        <!-- instagram -->
+                        <li>
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank">
+                                <i class="goog-instagram"></i>
+                            </a>
+                        </li>
+                        <!-- end of instagram -->
 
-                    <!-- facebook -->
-                    <li>
-                        <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank">
-                            <i class="goog-facebook"></i>
-                        </a>
-                    </li>
-                    <!-- end of facebook -->
+                        <!-- facebook -->
+                        <li>
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank">
+                                <i class="goog-facebook"></i>
+                            </a>
+                        </li>
+                        <!-- end of facebook -->
 
-                    <!-- behance -->
-                    <li>
-                        <a rel="nofollow noreferrer noopener" href="<?= CONTACT['behance']; ?>" target="_blank">
-                            <i class="goog-behance"></i>
-                        </a>
-                    </li>
-                    <!-- end of behance -->
+                        <!-- behance -->
+                        <li>
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['behance']; ?>" target="_blank">
+                                <i class="goog-behance"></i>
+                            </a>
+                        </li>
+                        <!-- end of behance -->
 
-                    <!-- linkedin -->
-                    <li>
-                        <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank">
-                            <i class="goog-linkedin"></i>
-                        </a>
-                    </li>
-                    <!-- end of linkedin -->
-                </ul>
+                        <!-- linkedin -->
+                        <li>
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank">
+                                <i class="goog-linkedin"></i>
+                            </a>
+                        </li>
+                        <!-- end of linkedin -->
+                    </ul>
+                </div>
+                <!-- end of container -->
             </div>
             <!-- end of midias -->
         </div>
         <!-- end of information -->
 
+        <!-- end of row -->
     </div>
 </section>

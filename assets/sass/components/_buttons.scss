@@ -1,4 +1,4 @@
- @use '../abstracts' as *;
+@use '../abstracts' as *;
 
 .btn {
     display: inline-block !important;
@@ -11,7 +11,7 @@
     border: none;
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
-    line-height: 1 !important;
+    line-height: 1.5 !important;
 
     font: {
         family: "Poppins SemiBold", sans-serif !important;
@@ -35,11 +35,35 @@
 
                 &:hover {
                     color: var(--clr-white-500);
-                    background-color: var(--clr-orange-900);
+                    background-color: var(--clr-green-500);
                     @include transition(all);
                 }
             }
-        } @else {
+        }@else if $color == neutral{
+            .btn-#{$color}-#{$prop} {
+                background-color: $value;
+                color: var(--clr-white-500);
+                @include transition(all);
+
+                &:hover {
+                    color: var(--clr-neutral-500);
+                    background-color: var(--clr-white-500);
+                    @include transition(all);
+                }
+            }
+        }@else if $color == #{green}{
+            .btn-#{$color}-#{$prop} {
+                background-color: $value;
+                color: var(--clr-green-700);
+                @include transition(all);
+
+                &:hover {
+                    color: var(--clr-green-800);
+                    background-color: darken($value, 5%);
+                    @include transition(background-color);
+                }
+            }
+        }@else {
             .btn-#{$color}-#{$prop} {
                 background-color: $value;
                 color: white;

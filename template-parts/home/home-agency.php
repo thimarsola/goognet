@@ -7,8 +7,8 @@
             <p>
                 Somos 5 estrelas no Google
                 <?php
-                    for ($icon=1; $icon < 6; $icon++):
-                ?>
+                for ($icon=1; $icon < 6; $icon++):
+                    ?>
                     <i class="goog-star"></i>
                 <?php endfor; ?>
             </p>
@@ -26,14 +26,18 @@
                 </picture>
             </div>
             <!-- end of image -->
-            
+
             <!-- content -->
             <div class="agency__row__content">
                 <!-- logo -->
                 <img src="<?= image('logo-destaque.svg'); ?>" alt="<?= SITE['name']; ?> - A melhor Agência de Marketing do Grande ABC!">
                 <!-- end of logo -->
 
-                <p>Somos como todo mundo. Começamos nossos dias com uma grande caneca de café, checamos nossos e-mails e então começamos a trabalhar em um projeto único e diferenciado para você. Ok, talvez sejamos um pouco diferentes.</p>
+                <!-- text -->
+                <div class="agency__row__content__text">
+                    <p>Somos como todo mundo. Começamos nossos dias com uma grande caneca de café, checamos nossos e-mails e então começamos a trabalhar em um projeto único e diferenciado para você. Ok, talvez sejamos um pouco diferentes.</p>
+                </div>
+                <!-- end of text -->
             </div>
             <!-- end of content -->
         </div>

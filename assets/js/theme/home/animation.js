@@ -1,4 +1,4 @@
-const screenPosition = window.innerHeight / 2;
+const screenPosition = window.innerHeight / 1.25;
 
 //about
 function animationAbout(){
@@ -21,3 +21,14 @@ function animationSimulador(){
     }
 }
 window.addEventListener('scroll', animationSimulador);
+
+//blog
+function animationBlog(){
+    const blog = document.querySelector('.blog__content__container__body');
+    const blogPosition = blog.getBoundingClientRect().top;
+
+    if(blogPosition < screenPosition){
+       blog.classList.add('blog__content__container__body--animation');
+    }
+}
+window.addEventListener('scroll', animationBlog);
