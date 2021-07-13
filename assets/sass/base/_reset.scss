@@ -39,6 +39,7 @@ ol {
 // Set core root defaults
 html {
     scroll-behavior: smooth;
+    font-display: optional
 }
 
 // Set core body defaults
@@ -88,8 +89,8 @@ textarea {
     padding: var(--fs-100) var(--fs-200);
     font-family: 'Poppins Regular', sans-serif !important;
     border: none;
-    border-bottom: 2px solid var(--clr-neutral-100);
-    color: var(--clr-neutral-300) !important;
+    border-bottom: 1.5px solid var(--clr-neutral-100);
+    color: var(--clr-neutral-400) !important;
     line-height: 1.5;
     transform: scale(1);
     @include transition(transform);
@@ -136,6 +137,12 @@ textarea {
 
     &:focus {
         background: #f8f8f8;
+    }
+
+    @include mq(sm){
+        &::-webkit-input-placeholder, &::-moz-placeholder,  &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder{
+            font-size: 1.5rem !important;
+        }
     }
 }
 

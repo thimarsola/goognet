@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/images/favicon.png">
     <meta property="og:region" content="Brasil">
     <meta property="og:title" content="<?= SITE["name"] ?>">
-    <meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/images/aquila-saude.png">
+    <meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/images/goognet.png">
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
     <meta property="og:description" content="<?= SITE["desc"]; ?>">
@@ -45,7 +45,7 @@ if (function_exists('custom_wp_body_open')) {
 if(!is_404()):
 ?>
 <!--header-->
-<?php //get_template_part('template-parts/header/header', 'header'); ?>
+<?php get_template_part('template-parts/header/header', 'header'); ?>
 <!--end of header-->
 
 <!-- whatsapp -->

@@ -34,7 +34,7 @@
                     <div class="results__row__data__card">
                         <!-- header -->
                         <div class="results__row__data__card__header">
-                            <p><?= $result['result']; ?></p>
+                            <p class="results__row__data__card--counter"><?= $result['result']; ?></p>
                         </div>
                         <!-- end of header -->
 

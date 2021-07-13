@@ -69,7 +69,7 @@
                         <ul>
                             <!-- instagram -->
                             <li>
-                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank">
+                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank" title="Siga a Goog no Instagram">
                                     <i class="goog-instagram"></i>
                                 </a>
                             </li>
@@ -77,7 +77,7 @@
 
                             <!-- facebook -->
                             <li>
-                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank">
+                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank" title="Siga a Goog no Facebook">
                                     <i class="goog-facebook"></i>
                                 </a>
                             </li>
@@ -85,7 +85,7 @@
 
                             <!-- linkedin -->
                             <li>
-                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank">
+                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank" title="Siga a Goog no Linkedin">
                                     <i class="goog-linkedin"></i>
                                 </a>
                             </li>

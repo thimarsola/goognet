@@ -8,7 +8,7 @@ $(function () {
             menuHeight = $('.header').innerHeight();
 
         $('html, body').animate({
-            scrollTop: targetOffset - menuHeight * 1.1
+            scrollTop: targetOffset - menuHeight
         }, 1000);
     });
 });

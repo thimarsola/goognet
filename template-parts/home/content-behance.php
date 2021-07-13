@@ -1,7 +1,7 @@
 <!-- card -->
 <article class="projects__container__behance__card">
     <!-- image -->
-    <a href="<?php the_field('behance'); ?>" title="Projeto <?= get_the_title() . ' - ' . SITE['name']; ?>"  target="_blank">
+    <a rel="nofollow noreferrer noopener" href="<?php the_field('behance'); ?>" title="Projeto <?= get_the_title() . ' - ' . SITE['name']; ?>"  target="_blank">
         <img src="<?= get_the_post_thumbnail_url(); ?>" alt="Projeto <?= get_the_title() . ' - ' . SITE['name']; ?>" loading="lazy">
     </a>
     <!-- end of image -->

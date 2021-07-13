@@ -10,9 +10,10 @@
             <div class="header__navbar__section">
                 <!-- toggle -->
                 <div class="header__navbar__section__toggle">
-                    <div class="header__navbar__section__toggle__bar"></div>
-                    <div class="header__navbar__section__toggle__bar"></div>
-                    <div class="header__navbar__section__toggle__bar"></div>
+                    <p>
+                        <span></span>
+                        <img src="<?= image('vetor-menu.svg'); ?>" alt="Vetor - <?= SITE['name']; ?>" loading="lazy">
+                    </p>
                 </div>
                 <!-- end of toggle -->
 

@@ -36,7 +36,7 @@
                     <div class="services__row__card__body">
                         <p><?= $service['description']; ?></p>
 
-                        <a href="<?= get_permalink(get_page_by_title($service['name'])); ?>" class="btn btn-green-500">Saiba mais</a>
+                        <a href="<?= get_permalink(get_page_by_title($service['name'])); ?>" class="btn btn-green-500" target="_blank" title="Conheça mais sobre <?= $service['name']; ?>">Saiba mais</a>
                     </div>
                     <!-- end of body -->
                 </article>

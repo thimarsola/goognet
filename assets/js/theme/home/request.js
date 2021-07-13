@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     const path = $(location).attr("href");
-    const file = 'wp-content/themes/tropicalpet/source/Support/Sender.php';
+    const file = 'wp-content/themes/goognet/source/Support/Sender.php';
 
     $('#form').submit(function () {
         $.ajax({
@@ -10,7 +10,7 @@ $(document).ready(function () {
             type: 'POST',
             data: $('#form').serialize(),
             success: function (data) {
-                $('.contact__form__row__form__status').html(data);
+                $('.contact__row__content__form__status').html(data);
             }
         });
         return false;
@@ -19,6 +19,6 @@ $(document).ready(function () {
 
 $(function () {
     $("#button").click(function () {
-        $(".contact__form__row__form__status--loading").removeClass("d-none");
+        $(".contact__row__content__form__status--loading").removeClass("d-none");
     });
 });

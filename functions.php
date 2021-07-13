@@ -29,4 +29,7 @@ require_once get_template_directory() . '/inc/Excerpt.php';
 require_once get_template_directory() . '/inc/Pagination.php';
 
 //SITEMAP SUPPORT
-require_once get_template_directory() . '/inc/Pagination.php';
+require_once get_template_directory() . '/inc/Sitemap.php';
+
+//CUSTOM STHEME SUPPORT
+require_once get_template_directory() . '/inc/ThemeSupport.php';

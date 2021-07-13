@@ -7,6 +7,7 @@ if ($_POST) {
 	$subjectForm = 'Formulário de Contato Website ' . SITE['name'];
 	$nameForm = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 	$mailForm = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+	$phoneForm = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
 	$messageForm = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
 	$email = new Email();
@@ -20,8 +21,8 @@ if ($_POST) {
                     <br>
                     <p>Aqui estão os meus dados para o contato</p>
                     <p><strong>E-mail:</strong><br>{$mailForm}</p>
+                    <p><strong>Telefone | Whatsapp:</strong><br>{$phoneForm}</p>
                     <br>
-                    <p><strong>Gostaria de falar sobre:</strong><br>{$subjectForm}</p>
                     <p><strong>Mensagem:</strong><p>
                     <p>$messageForm</p>",
 		SITE['name'],

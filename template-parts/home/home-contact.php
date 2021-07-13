@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" id="contato">
     <!-- row -->
     <div class="contact__row">
 
@@ -85,7 +85,7 @@
                         <!-- mail -->
                         <li>
                             <address>
-                                <a rel="nofollow noreferrer noopener" href="mailto:<?= CONTACT['mail']; ?>" target="_blank">
+                                <a rel="nofollow noreferrer noopener" href="mailto:<?= CONTACT['mail']; ?>" target="_blank" title="Que tal conversarmos por e-mail?">
                                     <i class="goog-mail"></i>
                                     <?= CONTACT['mail']; ?>
                                 </a>
@@ -95,7 +95,7 @@
 
                         <!-- phone -->
                         <li>
-                            <a rel="nofollow noreferrer noopener" href="tel:<?= formatPhone(CONTACT['phone']['01']); ?>" target="_blank">
+                            <a rel="nofollow noreferrer noopener" href="tel:<?= formatPhone(CONTACT['phone']['01']); ?>" target="_blank" title="Que tal conversarmos pelo telefone?">
                                 <i class="goog-phone"></i>
                                 <?= CONTACT['phone']['01']; ?>
                             </a>
@@ -111,7 +111,7 @@
                         <!-- address -->
                         <li>
                             <address>
-                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['addressLink']; ?>" target="_blank">
+                                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['addressLink']; ?>" target="_blank" title="Venha tomar um café!">
                                     <i class="goog-target"></i>
                                     <?= CONTACT['address']; ?>
                                 </a>
@@ -121,8 +121,10 @@
 
                         <!-- schedule -->
                         <li>
-                            <i class="goog-clock"></i>
-                            8:30 - 17:00
+                            <p>
+                                <i class="goog-clock"></i>
+                                8:30 - 17:00
+                            </p>
                         </li>
                         <!-- end of schedule -->
                     </ul>
@@ -140,7 +142,7 @@
                     <ul>
                         <!-- instagram -->
                         <li>
-                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank">
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank" title="Siga a Goog no Instagram">
                                 <i class="goog-instagram"></i>
                             </a>
                         </li>
@@ -148,7 +150,7 @@
 
                         <!-- facebook -->
                         <li>
-                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank">
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank" title="Siga a Goog no Facebook">
                                 <i class="goog-facebook"></i>
                             </a>
                         </li>
@@ -156,7 +158,7 @@
 
                         <!-- behance -->
                         <li>
-                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['behance']; ?>" target="_blank">
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['behance']; ?>" target="_blank" title="Conheça o nosso Portfolio de Sites!">
                                 <i class="goog-behance"></i>
                             </a>
                         </li>
@@ -164,7 +166,7 @@
 
                         <!-- linkedin -->
                         <li>
-                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank">
+                            <a rel="nofollow noreferrer noopener" href="<?= CONTACT['linkedin']; ?>" target="_blank" title="Siga a Goog no Linkedin">
                                 <i class="goog-linkedin"></i>
                             </a>
                         </li>

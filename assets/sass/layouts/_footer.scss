@@ -125,6 +125,19 @@
         }
     }
 
+    //breakpoint mobile
+    @include mq(sm){
+        &__content{
+            &__row{
+                    font-size: 1.5rem;
+            }
+        }
+
+        &__developer{
+            font-size: 1.5rem;
+        }
+    }
+
     //breakpoint 390px
     @include bp(390px){
         &__developer{

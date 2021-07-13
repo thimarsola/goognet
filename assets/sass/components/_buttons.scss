@@ -15,7 +15,7 @@
 
     font: {
         family: "Poppins SemiBold", sans-serif !important;
-        size: 1.4rem;
+        size: 1.5rem;
     }
     text-transform: uppercase;
 
@@ -54,11 +54,12 @@
         }@else if $color == #{green}{
             .btn-#{$color}-#{$prop} {
                 background-color: $value;
-                color: var(--clr-green-700);
+                color: hsla(200,0%,0%,.75);
                 @include transition(all);
 
                 &:hover {
-                    color: var(--clr-green-800);
+                    //color: var(--clr-green-900);
+                    color: hsla(200,0%,0%,.75);
                     background-color: darken($value, 5%);
                     @include transition(background-color);
                 }

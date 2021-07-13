@@ -42,12 +42,12 @@ define("SOCIAL", [
  * MAIL CONNECT
  */
 define("MAIL", [
-    "host" => "mail.goognet.com.br",
+    "host" => "mail.xxx.com.br",
     "port" => "587",
-    "user" => "@goognet.com.br",
+    "user" => "@xxx.com.br",
     "passwd" => "",
     "from_name" => "Goognet Solução Digital",
-    "from_email" => "@goognet.com.br"
+    "from_email" => "@xxx.com.br"
 ]);
 
 /**
