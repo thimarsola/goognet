@@ -69,7 +69,8 @@ define("CONTACT", [
         "message" => "Olá Goognet, gostaria de maiores informações para o meu Marketing Digital",
         "messageSimulator" => "Olá Goognet, gostaria de maiores informações para simular o meu Sucesso!",
         "messageCTA" => "Olá Goognet, gostaria de falar sobre o meu Projeto!",
-        "messageFAQ" => "Olá Goognet, eu ainda gostaria de tirar algumas dúvidas"
+        "messageFAQ" => "Olá Goognet, eu ainda gostaria de tirar algumas dúvidas",
+        "messageBudget" => "Olá Goognet, eu gostaria de solicitar um orçamento para o serviço de "
     ],
     "phone" => [
         "01" => "(11) 2355-1552",

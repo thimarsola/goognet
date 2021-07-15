@@ -768,22 +768,26 @@ body {
 }
 .header__navbar__section__toggle {
   color: var(--clr-white-500);
+  transition: color 300ms ease-in-out;
 }
 .header__navbar__section__toggle p {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-family: "Poppins SemiBold", sans-serif !important;
+  font-size: 1.5rem;
+  color: inherit;
   line-height: 1 !important;
+  transition: color 300ms ease-in-out;
 }
 .header__navbar__section__toggle p img {
   transform: rotate(0deg);
   transition: transform 300ms ease-in-out;
 }
-.header__navbar__section__toggle p:hover {
+.header__navbar__section__toggle p:hover, .header__navbar__section__toggle p:focus {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
 }
-.header__navbar__section__toggle p:hover img {
+.header__navbar__section__toggle p:hover img, .header__navbar__section__toggle p:focus img {
   transform: rotate(360deg);
   transition: transform 300ms ease-in-out;
 }
@@ -811,17 +815,24 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   transition: background 300ms ease-in-out;
 }
-.header--sticky nav {
-  color: inherit;
+.header__pages--sticky {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transition: background 300ms ease-in-out;
 }
-.header--sticky .header__navbar__section__toggle__bar {
-  background-color: var(--clr-neutral-900) !important;
+.header__pages--sticky .header__navbar__section__toggle {
+  color: var(--clr-neutral-500) !important;
+  transition: color 300ms ease-in-out;
 }
 .header--active .header__navbar__section__toggle {
   position: absolute;
   top: 3.5rem;
   right: 9rem;
   z-index: 300;
+  color: var(--clr-white-500) !important;
+}
+.header--active .header__navbar__section__toggle p {
+  color: inherit !important;
 }
 .header--active .header__navbar__section__toggle p span::after {
   content: "fechar";
@@ -865,7 +876,7 @@ body {
     max-height: var(--fs-500);
   }
   .header__navbar__section__container {
-    width: 85vw;
+    width: 88vw;
   }
   .header--active .header__navbar__section__toggle {
     top: 3rem;

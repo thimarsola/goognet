@@ -1,11 +1,23 @@
-<header class="header<?= is_page() || is_single() ? ' p-fixed' : '' ?>">
+<header class="header">
     <div class="container">
         <!--navbar-->
         <div class="header__navbar">
             <!-- brand -->
-            <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
-                <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
-            </a>
+            <?php
+                if(is_page()):
+            ?>
+                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
+                    <img src="<?= image('logo-primario.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
+                </a>
+            <?php
+                else:
+            ?>
+                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
+                    <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
+                </a>
+            <?php endif; ?>
+            <!-- end of brand -->
+
 
             <div class="header__navbar__section">
                 <!-- toggle -->

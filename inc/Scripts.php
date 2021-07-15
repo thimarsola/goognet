@@ -5,8 +5,8 @@ function loadJS()
 {
     if(is_home()){
         wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/script-home.min.js', [], '1.0.0', true);
-    }elseif (is_page('Blog')){
-        wp_enqueue_script('blog', get_template_directory_uri() . '/assets/js/script-blog.min.js', [], '1.0.0', true);
+    }elseif (is_page('Divulgação Google') || is_page('Divulgação Face & Insta') || is_page('Criação Website') || is_page('Identidade Visual') || is_page('Criação de Imagens') || is_page('Criação E-commerce')){
+        wp_enqueue_script('services', get_template_directory_uri() . '/assets/js/script-services.min.js', [], '1.0.0', true);
     }elseif (is_page()){
 	    wp_enqueue_script('page', get_template_directory_uri() . '/assets/js/script-product.min.js', [], '1.0.0', true);
     }elseif (is_single()){
