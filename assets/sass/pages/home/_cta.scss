@@ -1,0 +1,43 @@
+@use "../../abstracts" as *;
+
+.cta{
+    @include padding(var(--fs-1000));
+    background:{
+        image: url("../images/background-cta.svg");
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+
+    &__row{
+        margin: 0 auto;
+        max-width: 80rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__header{
+            font-size: var(--fs-600);
+        }
+    }
+
+    //breakpoint 1440px
+    @include bp(1440px){
+        background-size: contain;
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        background-size: cover;
+        background-position: center right;
+        &__row{
+            display: block;
+            text-align: center;
+
+            &__header{
+                margin-bottom: var(--fs-500);
+            }
+        }
+    }
+}

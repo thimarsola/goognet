@@ -1,0 +1,32 @@
+@use "../../abstracts" as *;
+
+.cta{
+    @include padding(var(--fs-700));
+    color: var(--clr-white-500);
+    background:{
+        image: url("../images/vetor-pages.svg");
+        size: contain;
+        position: center;
+        repeat: no-repeat;
+    }
+
+    &__row{
+        width: 100%;
+        text-align: center;
+
+        p{
+            margin-bottom: var(--fs-400);
+            font-size: var(--fs-300);
+        }
+
+        a{
+            align-self: center;
+        }
+    }
+
+    //breakpoint 1440px
+    @include bp(1440px){
+        background-size: cover;
+        background-position: bottom left;
+    }
+}

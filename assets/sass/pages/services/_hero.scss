@@ -1,0 +1,133 @@
+@use "../../abstracts" as *;
+
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    &__row{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 var(--fs-1000);
+            align-self: center;
+
+            &__header{
+                margin-bottom: var(--fs-300);
+
+                p{
+                    margin-bottom: var(--fs-100);
+                    font-family: 'Poppins SemiBold', sans-serif !important;
+                    font-size: 2.2rem;
+                    line-height: 1 !important;
+                }
+
+                h2{
+                    font-size: var(--fs-600);
+                }
+            }
+
+            &__body{
+                text-align: justify;
+                font-size: 1.5rem;
+
+                a{
+                    margin-top: var(--fs-600);
+                }
+            }
+
+        }
+
+        &__image{
+            max-height: 100vh;
+            width: 100%;
+            height: 100%;
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    //breakpoint 1366px
+    @include bp(1366px){
+        &__row{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    //breakpoint 1024px
+    @include bp(1024px){
+        &__row{
+            &__content{
+                padding: 0 var(--fs-400);
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &__content{
+                flex-basis: 100%;
+                height: 50vh;
+            }
+
+            &__image{
+                flex-basis: 100%;
+                height: 50vh;
+                width: 100%;
+                order: -1;
+
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__row{
+            &__content{
+                &__header{
+                    margin-bottom: var(--fs-200);
+
+                    p{
+                        font-size: 2.2rem;
+                    }
+
+                    h2{
+                        font-size: 3.8rem;
+                    }
+                }
+
+                &__body{
+                    a{
+                        margin-top: var(--fs-400);
+                    }
+                }
+            }
+        }
+    }
+}

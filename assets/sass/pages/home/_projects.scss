@@ -1,0 +1,113 @@
+@use "../../abstracts" as *;
+
+.projects{
+    @include padding(var(--fs-1000));
+    padding-left: var(--gap-lg);
+    margin-left: auto;
+    max-width: 152rem;
+    width: 100%;
+
+    &__container{
+        &__content{
+            max-width: 35rem;
+            width: 100%;
+
+            &__header{
+                margin-bottom: var(--fs-300);
+                font-size: var(--fs-500);
+            }
+
+            &__body{
+                text-align: justify;
+
+                .btn{
+                    margin-top: var(--fs-200);
+                }
+            }
+        }
+
+        &__behance{
+            margin-top: -2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1.55fr 1fr;
+            gap: var(--gap-lg);
+
+            &__card{
+
+                &:nth-child(1){
+                    align-self: flex-end;
+                }
+
+                a{
+                    img{
+                        transform: scale(1);
+                        @include transition(transform);
+
+                        &:hover{
+                            transform: scale(.95);
+                            @include transition(transform);
+                        }
+                    }
+                }
+
+                &__content{
+                    padding-right: var(--gap);
+
+                    &__header{
+                        margin: var(--fs-500) 0 var(--fs-300) 0;
+                        font-size: var(--fs-400);
+                    }
+
+                    &__body{
+                        text-align: justify;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        padding-left: 0;
+
+        &__container{
+            margin: 0 auto;
+            padding: 0 var(--gap);
+            max-width: var(--md);
+
+            &__content{
+                max-width: 100%;
+            }
+
+            &__behance{
+                margin-top: var(--fs-800);
+                grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+                gap: calc(var(--gap-lg) * 2) var(--gap-lg);
+
+                &__card{
+                    box-shadow: 0 0 30px rgba(0,0,0, .1);
+
+                    &__content{
+                        padding: var(--gap-lg);
+
+                        &__header{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+
+        &__container{
+            margin: 0 auto;
+            padding: var(--gap-lg);
+            max-width: 100%;
+        }
+    }
+}

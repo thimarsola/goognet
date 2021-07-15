@@ -1,0 +1,124 @@
+@use "../../abstracts" as *;
+
+.divulgation{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: '';
+        max-width: 30%;
+        width: 100%;
+        height: 100%;
+        background: transparent linear-gradient(90deg, #93FF00 0%, #8AFD06 33%, #47D332 100%) 0% 0% no-repeat padding-box;
+        z-index: -1;
+    }
+
+    &__row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-lg);
+
+        &__content{
+            @include padding(var(--fs-1000));
+
+            &__header{
+                margin-bottom: var(--fs-600);
+                font-size: var(--fs-600);
+            }
+
+            &__body{
+                &__article{
+                    text-align: justify;
+
+                    &:not(:last-child){
+                        margin-bottom: var(--fs-600);
+                    }
+
+                    &__header{
+                        margin-bottom: var(--fs-200);
+                        font-size: var(--fs-300);
+                    }
+                }
+            }
+        }
+
+        &__image{
+            justify-self: flex-end;
+            align-self: flex-end;
+            width: 80%;
+            height: 80%;
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: left bottom;
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &::before{
+            width: 10%;
+            height: 75%;
+            border-top-left-radius: 5rem;
+        }
+
+        .container{
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        &__row{
+            width: 100%;
+            grid-template-columns: 60% 1fr;
+
+            &__content{
+                &__header{
+                    font-size: var(--fs-500);
+                }
+            }
+
+            &__image{
+                height: 60%;
+
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &::before{
+            width: 8%;
+            height: 53%;
+            border-top-left-radius: 5rem;
+        }
+
+        .container{
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        &__row{
+            gap: var(--gap);
+            &__content{
+                &__header{
+                    font-size: var(--fs-400);
+                }
+            }
+
+            &__image{
+                height: 45%;
+            }
+        }
+    }
+}
