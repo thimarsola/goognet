@@ -10,9 +10,30 @@ $homeCss->minify(dirname(__DIR__, 1) . "/assets/css/style.min.css");
 /**
  * SERVICES CSS
  */
-$homeCss = new MatthiasMullie\Minify\CSS();
-$homeCss->add(dirname(__DIR__, 1) . "/assets/css/style-services.css");
-$homeCss->minify(dirname(__DIR__, 1) . "/assets/css/style-services.min.css");
+$servicesCss = new MatthiasMullie\Minify\CSS();
+$servicesCss->add(dirname(__DIR__, 1) . "/assets/css/style-services.css");
+$servicesCss->minify(dirname(__DIR__, 1) . "/assets/css/style-services.min.css");
+
+/**
+ * BLOG CSS
+ */
+$blogCss = new MatthiasMullie\Minify\CSS();
+$blogCss->add(dirname(__DIR__, 1) . "/assets/css/style-blog.css");
+$blogCss->minify(dirname(__DIR__, 1) . "/assets/css/style-blog.min.css");
+
+/**
+ * CATEGORY CSS
+ */
+$categoryCss = new MatthiasMullie\Minify\CSS();
+$categoryCss->add(dirname(__DIR__, 1) . "/assets/css/style-category.css");
+$categoryCss->minify(dirname(__DIR__, 1) . "/assets/css/style-category.min.css");
+
+/**
+ * SINGLE CSS
+ */
+$singleCss = new MatthiasMullie\Minify\CSS();
+$singleCss->add(dirname(__DIR__, 1) . "/assets/css/style-single.css");
+$singleCss->minify(dirname(__DIR__, 1) . "/assets/css/style-single.min.css");
 
 /**
  * 404
@@ -40,12 +61,41 @@ $homeJs->minify(dirname(__DIR__, 1) . "/assets/js/script-home.min.js");
 /**
  * SERVICES JS
  */
-$homeJs = new MatthiasMullie\Minify\JS();
-$homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
-$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
-$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
-$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
-$homeJs->minify(dirname(__DIR__, 1) . "/assets/js/script-services.min.js");
+$servicesJs = new MatthiasMullie\Minify\JS();
+$servicesJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$servicesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$servicesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$servicesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
+$servicesJs->minify(dirname(__DIR__, 1) . "/assets/js/script-services.min.js");
+
+/**
+ * BLOG JS
+ */
+$blogJs = new MatthiasMullie\Minify\JS();
+$blogJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$blogJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$blogJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$blogJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
+$blogJs->add(dirname(__DIR__, 1) . "/assets/js/theme/blog/animation.js");
+$blogJs->minify(dirname(__DIR__, 1) . "/assets/js/script-blog.min.js");
+
+/**
+ * CATEGORY JS
+ */
+$categoryJs = new MatthiasMullie\Minify\JS();
+$categoryJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$categoryJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$categoryJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$categoryJs->minify(dirname(__DIR__, 1) . "/assets/js/script-category.min.js");
+
+/**
+ * SINGLE JS
+ */
+$singleJs = new MatthiasMullie\Minify\JS();
+$singleJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$singleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$singleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$singleJs->minify(dirname(__DIR__, 1) . "/assets/js/script-single.min.js");
 
 /**
  * Error

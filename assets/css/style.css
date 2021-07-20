@@ -724,9 +724,9 @@ body {
   transition: all 300ms ease-in-out;
 }
 .pagination__nav .pagination__nav__list__item__link:hover {
-  background-color: var(--clr-orange-500);
-  color: white;
-  border-color: var(--clr-orange-500);
+  background-color: var(--clr-green-500);
+  color: var(--clr-white-500);
+  border-color: var(--clr-green-500);
   transition: all 300ms ease-in-out;
 }
 .pagination__nav .pagination__nav__list__item__link--prev {
@@ -736,9 +736,9 @@ body {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 .pagination__nav .pagination__nav__list__item__link--active {
-  background-color: var(--clr-orange-500);
+  background-color: var(--clr-green-500);
   color: var(--clr-white-500);
-  border-color: var(--clr-orange-500);
+  border-color: var(--clr-green-500);
 }
 
 .header {
@@ -796,6 +796,9 @@ body {
 }
 .header__navbar__section__toggle p span::after {
   content: "menu";
+}
+.header__navbar__section__toggle__blog {
+  color: var(--clr-neutral-400);
 }
 .header__navbar__section__container {
   display: block;
@@ -1008,10 +1011,7 @@ body {
   .footer__developer {
     font-size: 1.5rem;
   }
-}
-@media only screen and (max-width: 390px) {
   .footer__developer__row {
-    padding: var(--fs-300) 0;
     text-align: center !important;
   }
   .footer__developer__row__agency {
@@ -1045,26 +1045,6 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.goog-clock:before {
-  content: "";
-}
-
-.goog-phone:before {
-  content: "";
-}
-
-.goog-target:before {
-  content: "";
-}
-
-.goog-mail:before {
-  content: "";
-}
-
-.goog-star:before {
-  content: "";
-}
-
 .goog-behance:before {
   content: "";
 }
@@ -1073,48 +1053,92 @@ i {
   content: "";
 }
 
-.goog-datas:before {
+.goog-clock:before {
   content: "";
 }
 
-.goog-facebook:before {
+.goog-datas:before {
   content: "";
 }
 
-.goog-instagram:before {
+.goog-facebook-link:before {
   content: "";
 }
 
-.goog-investiment:before {
+.goog-facebook:before {
   content: "";
 }
 
-.goog-linkedin:before {
+.goog-instagram:before {
   content: "";
 }
 
-.goog-logo:before {
+.goog-investiment:before {
   content: "";
 }
 
-.goog-meta:before {
+.goog-left-arrow:before {
   content: "";
 }
 
-.goog-otimization:before {
+.goog-link:before {
   content: "";
 }
 
-.goog-play:before {
+.goog-linkedin-link:before {
   content: "";
 }
 
-.goog-w3c:before {
+.goog-linkedin:before {
   content: "";
 }
 
-.goog-whatsapp:before {
+.goog-logo:before {
   content: "";
+}
+
+.goog-mail:before {
+  content: "";
+}
+
+.goog-meta:before {
+  content: "";
+}
+
+.goog-otimization:before {
+  content: "";
+}
+
+.goog-phone:before {
+  content: "";
+}
+
+.goog-play:before {
+  content: "";
+}
+
+.goog-star:before {
+  content: "";
+}
+
+.goog-target:before {
+  content: "";
+}
+
+.goog-twitter-link:before {
+  content: "";
+}
+
+.goog-Vector:before {
+  content: "";
+}
+
+.goog-w3c:before {
+  content: "";
+}
+
+.goog-whatsapp:before {
+  content: "";
 }
 
 /* Magnific Popup CSS */

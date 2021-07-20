@@ -135,14 +135,9 @@
 
         &__developer{
             font-size: 1.5rem;
-        }
-    }
 
-    //breakpoint 390px
-    @include bp(390px){
-        &__developer{
             &__row{
-                padding: var(--fs-300) 0;
+                //padding: var(--fs-300) 0;
                 text-align: center !important;
 
                 &__agency{

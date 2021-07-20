@@ -18,9 +18,9 @@
                 @include transition(all);
 
                 &:hover{
-                    background-color: var(--clr-orange-500);
-                    color: white;
-                    border-color: var(--clr-orange-500);
+                    background-color: var(--clr-green-500);
+                    color: var(--clr-white-500);
+                    border-color: var(--clr-green-500);
                     @include transition(all);
                 }
 
@@ -33,9 +33,9 @@
                 }
 
                 &--active{
-                    background-color: var(--clr-orange-500);
+                    background-color: var(--clr-green-500);
                     color: var(--clr-white-500);
-                    border-color: var(--clr-orange-500);
+                    border-color: var(--clr-green-500);
                 }
             }
         }

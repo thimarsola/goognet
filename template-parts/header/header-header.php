@@ -4,7 +4,7 @@
         <div class="header__navbar">
             <!-- brand -->
             <?php
-                if(is_page()):
+                if(is_page() || is_category() || is_single()):
             ?>
                 <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
                     <img src="<?= image('logo-primario.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
@@ -21,7 +21,7 @@
 
             <div class="header__navbar__section">
                 <!-- toggle -->
-                <div class="header__navbar__section__toggle">
+                <div class="header__navbar__section__toggle<?= is_page('Blog') || is_category() || is_single() ? ' header__navbar__section__toggle__blog' : '' ?>">
                     <p>
                         <span></span>
                         <img src="<?= image('vetor-menu.svg'); ?>" alt="Vetor - <?= SITE['name']; ?>" loading="lazy">

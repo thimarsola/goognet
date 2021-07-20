@@ -10,7 +10,6 @@
   font-display: block;
 }
 
-
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'goognet' !important;
@@ -26,57 +25,75 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.goog-clock:before {
-  content: "\e90e";
-}
-.goog-phone:before {
-  content: "\e90f";
-}
-.goog-target:before {
-  content: "\e910";
-}
-.goog-mail:before {
-  content: "\e911";
-}
-.goog-star:before {
-  content: "\e90d";
-}
 .goog-behance:before {
   content: "\e900";
 }
 .goog-briefing:before {
   content: "\e901";
 }
-.goog-datas:before {
+.goog-clock:before {
   content: "\e902";
 }
-.goog-facebook:before {
+.goog-datas:before {
   content: "\e903";
 }
-.goog-instagram:before {
+.goog-facebook-link:before {
   content: "\e904";
 }
-.goog-investiment:before {
+.goog-facebook:before {
   content: "\e905";
 }
-.goog-linkedin:before {
+.goog-instagram:before {
   content: "\e906";
 }
-.goog-logo:before {
+.goog-investiment:before {
   content: "\e907";
 }
-.goog-meta:before {
+.goog-left-arrow:before {
   content: "\e908";
 }
-.goog-otimization:before {
+.goog-link:before {
   content: "\e909";
 }
-.goog-play:before {
+.goog-linkedin-link:before {
   content: "\e90a";
 }
-.goog-w3c:before {
+.goog-linkedin:before {
   content: "\e90b";
 }
-.goog-whatsapp:before {
+.goog-logo:before {
   content: "\e90c";
+}
+.goog-mail:before {
+  content: "\e90d";
+}
+.goog-meta:before {
+  content: "\e90e";
+}
+.goog-otimization:before {
+  content: "\e90f";
+}
+.goog-phone:before {
+  content: "\e910";
+}
+.goog-play:before {
+  content: "\e911";
+}
+.goog-star:before {
+  content: "\e912";
+}
+.goog-target:before {
+  content: "\e913";
+}
+.goog-twitter-link:before {
+  content: "\e914";
+}
+.goog-Vector:before {
+  content: "\e915";
+}
+.goog-w3c:before {
+  content: "\e916";
+}
+.goog-whatsapp:before {
+  content: "\e917";
 }

@@ -1,0 +1,193 @@
+@use "../../abstracts" as *;
+
+.hero{
+    position: relative;
+
+    &__image{
+        position: relative;
+        width: 100%;
+        height: 45vh;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+    }
+
+    &__content{
+        position: relative;
+        margin-top: -12.6rem;
+        padding: var(--fs-600) var(--gap-lg);
+        box-shadow: 0 0 30px rgba(0,0,0, .1);
+
+        &__categories{
+            ul{
+                margin-bottom: var(--fs-100);
+                display: flex;
+                flex-wrap: wrap;
+
+                li{
+                    margin-right: var(--gap);
+
+                    a{
+                        font-family: 'Poppins SemiBold', sans-serif !important;
+                        font-size: 12px;
+                        color: inherit;
+                        line-height: 1 !important;
+                        @include transition(color);
+
+                        &:hover{
+                            color: var(--clr-green-500);
+                            @include transition(color);
+                        }
+
+                        span{
+                            color: var(--clr-green-500) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__header{
+            margin-top: var(--fs-100);
+
+            p{
+                font-family: 'Poppins SemiBold', sans-serif !important;
+                font-size: var(--fs-700);
+
+                span{
+                    color: var(--clr-green-500);
+                }
+            }
+        }
+
+        &__author{
+            margin-top: var(--fs-200);
+
+            ul{
+                display: flex;
+                align-items: center;
+                font-size: 1.4rem;
+
+                li{
+                    &:first-child{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        span{
+                            margin-right: var(--fs-100);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: var(--fs-600);
+                            height: var(--fs-600);
+                            background: #f8f8f8;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &:nth-child(2){
+                        margin: 0 var(--fs-200);
+                    }
+                }
+            }
+        }
+    }
+
+    &__body{
+        @include padding(var(--fs-700));
+        text-align: justify;
+
+        h2{
+            margin-top: var(--fs-500);
+            margin-bottom: var(--fs-300);
+            font-size: var(--fs-400);
+        }
+
+        h3{
+            margin-top: var(--fs-400);
+            margin-bottom: var(--fs-200);
+            font-size: var(--fs-300);
+        }
+
+        img{
+            margin: var(--fs-200) 0;
+            width: 100%;
+        }
+
+        ul{
+            margin: var(--fs-200) 0;
+            list-style: initial;
+            list-style-position: inside;
+        }
+
+        ol{
+            list-style: decimal;
+            margin: var(--fs-200) 0;
+            list-style-position: inside;
+        }
+
+        iframe{
+            margin: var(--fs-200) 0;
+            width: 100%;
+            height: 40rem;
+            border: none;
+        }
+
+        p{
+            margin-bottom: var(--fs-200);
+        }
+
+        a{
+            color: inherit;
+            @include transition(color);
+
+            &:hover{
+                color: var(--clr-green-500);
+                @include transition(color);
+            }
+        }
+
+        blockquote{
+            padding: var(--fs-300);
+            border-left: 5px solid var(--clr-green-500);
+            background-color: #f8f8f8;
+            font-style: italic;
+
+            cite{
+                font-size: 1.4rem;
+                color: var(--clr-neutral-300);
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__image{
+            height: 30vh;
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__content{
+            &__header{
+                p{
+                    font-size: var(--fs-600);
+                }
+            }
+        }
+
+        &__body{
+            iframe{
+                height: 30rem;
+            }
+        }
+    }
+}

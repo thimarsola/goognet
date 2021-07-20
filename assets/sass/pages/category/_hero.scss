@@ -1,0 +1,194 @@
+@use "../../abstracts" as *;
+
+.hero{
+    position: relative;
+
+    &__image{
+        position: relative;
+        width: 100%;
+        height: 45vh;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+    }
+
+    &__content{
+        position: relative;
+        margin-top: -12.6rem;
+        padding: var(--fs-600) var(--gap-lg);
+        color: var(--clr-white-500);
+
+        p{
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins Regular', sans-serif !important;
+            font-size: 1.8rem;
+
+            span{
+                display: block;
+                margin-right: var(--fs-100);
+                width: 1rem;
+                height: 3px;
+                background-color: var(--clr-green-500);
+                border-radius: 1.5px;
+            }
+        }
+
+        &__header{
+            margin-top: var(--fs-100);
+
+            h2{
+                font-size: var(--fs-700);
+
+                span{
+                    color: var(--clr-green-500);
+                }
+            }
+        }
+    }
+
+    &__row{
+        position: relative;
+        padding-top: var(--fs-1000);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: var(--gap-lg);
+
+        &__card{
+            margin: 0;
+            transform: scale(1);
+            @include transition(transform);
+
+            &:hover{
+                transform: scale(1.02);
+                @include transition(transform);
+            }
+
+            &__image{
+                width: 100%;
+                height: 25rem;
+                z-index: 0;
+                box-shadow: 0 0 30px rgba(0,0,0, .1);
+
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            &__body{
+                position: relative;
+                margin-top: -3rem;
+                padding: var(--gap-lg) var(--gap);
+                max-width: 95%;
+                z-index: 2;
+                box-shadow: 0 0 30px rgba(0,0,0, .1);
+
+                ul{
+                    margin-bottom: var(--fs-100);
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li{
+                        margin-right: var(--gap);
+
+                        a{
+                            font-family: 'Poppins SemiBold', sans-serif !important;
+                            font-size: 12px;
+                            color: inherit;
+                            line-height: 1 !important;
+                            @include transition(color);
+
+                            &:hover{
+                                color: var(--clr-green-500);
+                                @include transition(color);
+                            }
+
+                            span{
+                                color: var(--clr-green-500) !important;
+                            }
+                        }
+                    }
+                }
+
+                &__header{
+                    margin-bottom: var(--fs-200);
+
+                    h3{
+                        margin-bottom: var(--fs-100);
+                        font-size: var(--fs-300);
+                    }
+
+                    time{
+                        font-family: 'Poppins Regular', sans-serif !important;
+                        font-size: 12px;
+                        line-height: 1 !important;
+                    }
+                }
+
+                &__content{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Poppins SemiBold', sans-serif !important;
+                        font-size: 1.4rem;
+                        color: inherit;
+                        line-height: 1 !important;
+                        @include transition(color);
+
+                        &:hover{
+                            color: var(--clr-green-500);
+                            @include transition(color);
+
+                            i{
+                                margin-left: 1.2rem;
+                                @include transition(margin);
+                            }
+                        }
+
+
+                        i{
+                            margin-left: var(--fs-100);
+                            @include transition(margin);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__pagination{
+        padding: var(--fs-600) 0 var(--fs-1000) 0;
+        position: relative;
+        display: block;
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__image{
+            height: 30vh;
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__content{
+            &__header{
+                h2{
+                    font-size: var(--fs-600);
+                }
+            }
+        }
+    }
+}

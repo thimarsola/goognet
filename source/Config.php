@@ -5,7 +5,8 @@
  */
 define("DEV", [
     "name" => "Goognet Solução Digital",
-    "url" => "https://goognet.com.br"
+    "url" => "https://goognet.com.br",
+    "domain" => "goognet.com.br"
 ]);
 
 /**
