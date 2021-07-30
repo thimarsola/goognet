@@ -35,7 +35,11 @@
                         <div class="services__row__card__container">
                             <!-- header -->
                             <header class="services__row__card__container__header">
-                                <h3><?= $service['name']; ?></h3>
+                                <h3>
+                                    <a href="<?= get_permalink(get_page_by_title($service['name'])); ?>" target="_blank" title="Conheça mais sobre <?= $service['name']; ?>">
+                                        <?= $service['name']; ?>
+                                    </a>
+                                </h3>
                             </header>
                             <!-- end of header -->
                         </div>

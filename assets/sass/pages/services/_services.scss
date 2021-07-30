@@ -49,6 +49,16 @@
                     margin-bottom: var(--fs-100);
                     font-size: 2rem;
                     text-align: center;
+
+                    a{
+                        color: inherit;
+                        @include transition(color);
+
+                        &:hover{
+                            color: var(--clr-green-500);
+                            @include transition(color);
+                        }
+                    }
                 }
             }
         }

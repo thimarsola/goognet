@@ -1170,6 +1170,13 @@ i {
 }
 .hero__content__categories ul li {
   margin-right: var(--gap);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content__categories ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .hero__content__categories ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1181,9 +1188,6 @@ i {
 .hero__content__categories ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.hero__content__categories ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .hero__content__header {
   margin-top: var(--fs-100);
@@ -1399,6 +1403,12 @@ i {
 }
 .related__row__card__body ul li {
   margin-right: var(--gap);
+  display: flex;
+  align-items: center;
+}
+.related__row__card__body ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .related__row__card__body ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1410,9 +1420,6 @@ i {
 .related__row__card__body ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.related__row__card__body ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .related__row__card__body__header {
   margin-bottom: var(--fs-200);

@@ -1,7 +1,7 @@
 @use "../../abstracts" as *;
 
 .cta{
-    @include padding(var(--fs-1000));
+    @include padding(var(--fs-700));
     background:{
         image: url("../images/background-cta.svg");
         size: cover;
@@ -13,12 +13,11 @@
         margin: 0 auto;
         max-width: 80rem;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        text-align: center;
 
         &__header{
-            font-size: var(--fs-600);
+            margin-bottom: var(--fs-400);
+            font-size: var(--fs-500);
         }
     }
 
@@ -31,13 +30,5 @@
     @include mq(sm){
         background-size: cover;
         background-position: center right;
-        &__row{
-            display: block;
-            text-align: center;
-
-            &__header{
-                margin-bottom: var(--fs-500);
-            }
-        }
     }
 }

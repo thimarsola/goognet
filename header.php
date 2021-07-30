@@ -24,6 +24,8 @@
             echo SITE['name'];
         }elseif (is_category()){
             echo single_cat_title() . " - " . SITE["name"];;
+        }elseif (is_404()){
+            echo SITE['name'];
         }else{
             echo get_the_title() . " - " . SITE["name"];
         }

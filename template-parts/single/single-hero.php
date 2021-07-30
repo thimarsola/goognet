@@ -10,20 +10,9 @@
         <div class="hero__content bg-white-500">
             <!-- categories -->
             <div class="hero__content__categories">
-                <ul>
-                    <?php
-                    $argCategories = [
-                        'orderby' => 'name',
-                        'order' => 'ASC',
-                    ];
-
-                    foreach (get_categories($argCategories) as $category):
-                        ?>
-                        <li>
-                            <a href="<?= get_category_link($category->term_id); ?>" target="_blank" title="Conheça a nossa categoria: <?= $category->cat_name ?>"><span>#</span> <?= $category->cat_name ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
+                <?php
+                the_category();
+                ?>
             </div>
             <!-- end of categories -->
 

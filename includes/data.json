@@ -1,0 +1,104 @@
+{
+    "data": [
+        {
+            "category": "Advogado",
+            "clicks": 1700,
+            "cpc": 1.19
+        },
+        {
+            "category": "Área de Aço e Ferro",
+            "clicks": 1900,
+            "cpc": 1.05
+        },
+        {
+            "category": "Área de Alumínio",
+            "clicks": 1400,
+            "cpc": 1.49
+        },
+        {
+            "category": "Área de Plástico",
+            "clicks": 1000,
+            "cpc": 2.02
+        },
+        {
+            "category": "Área Automotiva (Funilaria, mecânica e óleo)",
+            "clicks": 1600,
+            "cpc": 1.23
+        },
+        {
+            "category": "Área Médica e Clinicas",
+            "clicks": 1900,
+            "cpc": 1.08
+        },
+        {
+            "category": "Arquiteto e designer de interiores",
+            "clicks": 1900,
+            "cpc": 1.09
+        },
+        {
+            "category": "Contabilidade",
+            "clicks": 1100,
+            "cpc": 1.85
+        },
+        {
+            "category": "Clinica de Estética",
+            "clicks": 1400,
+            "cpc": 1.45
+        },
+        {
+            "category": "Empresa de EPI",
+            "clicks": 1200,
+            "cpc": 1.73
+        },
+        {
+            "category": "Empresa de Eventos",
+            "clicks": 1300,
+            "cpc": 1.56
+        },
+        {
+            "category": "Imoveis e Imobiliária",
+            "clicks": 7100,
+            "cpc": 0.29
+        },
+        {
+            "category": "Odontológica",
+            "clicks": 1700,
+            "cpc": 1.19
+        },
+        {
+            "category": "Pisos e Pedras",
+            "clicks": 3300,
+            "cpc": 0.62
+        },
+        {
+            "category": "Portas e Portões",
+            "clicks": 2900,
+            "cpc": 0.71
+        },
+        {
+            "category": "Roupas, Calçados e Acessórios",
+            "clicks": 4800,
+            "cpc": 0.42
+        },
+        {
+            "category": "Tratamento Capilar",
+            "clicks": 1200,
+            "cpc": 1.61
+        },
+        {
+            "category": "Turismo",
+            "clicks": 3800,
+            "cpc": 0.53
+        },
+        {
+            "category": "Veterinária e Petshop",
+            "clicks": 1900,
+            "cpc": 1.09
+        },
+        {
+            "category": "Vidraçaria",
+            "clicks": 1900,
+            "cpc": 1.09
+        }
+    ]
+}

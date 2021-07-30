@@ -9,6 +9,10 @@ function loadJS()
         wp_enqueue_script('services', get_template_directory_uri() . '/assets/js/script-services.min.js', [], '1.0.0', true);
     }elseif (is_page('Blog')){
         wp_enqueue_script('blog', get_template_directory_uri() . '/assets/js/script-blog.min.js', [], '1.0.0', true);
+    }elseif (is_page('Projetos')){
+        wp_enqueue_script('projects', get_template_directory_uri() . '/assets/js/script-projects.min.js', [], '1.0.0', true);
+    }elseif (is_page('Simulador')){
+        wp_enqueue_script('simulator', get_template_directory_uri() . '/assets/js/script-simulator.min.js', [], '1.0.0', true);
     }elseif (is_page()){
 	    wp_enqueue_script('page', get_template_directory_uri() . '/assets/js/script-product.min.js', [], '1.0.0', true);
     }elseif (is_single()){

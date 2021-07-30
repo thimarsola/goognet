@@ -1640,6 +1640,14 @@ i {
   font-size: 2rem;
   text-align: center;
 }
+.services__row__card__container__header a {
+  color: inherit;
+  transition: color 300ms ease-in-out;
+}
+.services__row__card__container__header a:hover {
+  color: var(--clr-green-500);
+  transition: color 300ms ease-in-out;
+}
 
 .simulator {
   padding: 12rem 0;

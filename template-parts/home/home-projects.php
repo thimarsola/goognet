@@ -13,7 +13,7 @@
             <div class="projects__container__content__body">
                 <p>Nosso time de desenvolvimento faz parte de uma estrutura forte, jovem e muito atualizada, para formar os melhores cases do mercado. Conheça nossos últimos projetos!</p>
 
-                <a rel="nofollow noreferrer noopener" href="<?= CONTACT['behance']; ?>" class="btn btn-green-500" target="_blank" title="Conheça todos os nossos projetos">Mais projetos</a>
+                <a href="<?= get_permalink(get_page_by_title('Projetos')); ?>" class="btn btn-green-500" target="_blank" title="Conheça todos os nossos projetos">Mais projetos</a>
             </div>
             <!-- end of body -->
         </div>
@@ -24,7 +24,7 @@
             <?php
             $argBehance = [
                 "post_type" => "projetos",
-                "post_per_page" => 3,
+                "posts_per_page" => 3,
                 "order" => "ASC"
             ];
 

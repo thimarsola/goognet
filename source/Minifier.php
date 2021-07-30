@@ -29,6 +29,20 @@ $categoryCss->add(dirname(__DIR__, 1) . "/assets/css/style-category.css");
 $categoryCss->minify(dirname(__DIR__, 1) . "/assets/css/style-category.min.css");
 
 /**
+ * PROJECTS CSS
+ */
+$projectsCss = new MatthiasMullie\Minify\CSS();
+$projectsCss->add(dirname(__DIR__, 1) . "/assets/css/style-projects.css");
+$projectsCss->minify(dirname(__DIR__, 1) . "/assets/css/style-projects.min.css");
+
+/**
+ * SIMULATOR CSS
+ */
+$simulatorCss = new MatthiasMullie\Minify\CSS();
+$simulatorCss->add(dirname(__DIR__, 1) . "/assets/css/style-simulator.css");
+$simulatorCss->minify(dirname(__DIR__, 1) . "/assets/css/style-simulator.min.css");
+
+/**
  * SINGLE CSS
  */
 $singleCss = new MatthiasMullie\Minify\CSS();
@@ -87,6 +101,27 @@ $categoryJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $categoryJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
 $categoryJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
 $categoryJs->minify(dirname(__DIR__, 1) . "/assets/js/script-category.min.js");
+
+/**
+ * PROJECTS JS
+ */
+$projectsJs = new MatthiasMullie\Minify\JS();
+$projectsJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$projectsJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$projectsJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$projectsJs->minify(dirname(__DIR__, 1) . "/assets/js/script-projects.min.js");
+
+/**
+ * SIMULATOR JS
+ */
+$simulatorJs = new MatthiasMullie\Minify\JS();
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/animation.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/visor.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/request.js");
+$simulatorJs->minify(dirname(__DIR__, 1) . "/assets/js/script-simulator.min.js");
 
 /**
  * SINGLE JS

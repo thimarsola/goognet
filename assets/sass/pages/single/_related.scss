@@ -66,6 +66,13 @@
 
                     li{
                         margin-right: var(--gap);
+                        display: flex;
+                        align-items: center;
+
+                        &:before{
+                            content: '#';
+                            color: var(--clr-green-500);
+                        }
 
                         a{
                             font-family: 'Poppins SemiBold', sans-serif !important;
@@ -77,10 +84,6 @@
                             &:hover{
                                 color: var(--clr-green-500);
                                 @include transition(color);
-                            }
-
-                            span{
-                                color: var(--clr-green-500) !important;
                             }
                         }
                     }

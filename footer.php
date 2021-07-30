@@ -122,7 +122,10 @@
 
                         if (is_home()) {
                             $urlBase = str_replace($protocols, "", get_bloginfo('wpurl'));
-                        } else {
+                        }elseif(is_single()){
+                            $urlBase = str_replace($protocols, "", get_the_permalink());
+                        }
+                        else {
                             $urlBase = str_replace($protocols, "", get_bloginfo('wpurl')) . '/' . (get_page_uri());
                         }
                         ?>

@@ -21,7 +21,7 @@
 
             <div class="header__navbar__section">
                 <!-- toggle -->
-                <div class="header__navbar__section__toggle<?= is_page('Blog') || is_category() || is_single() ? ' header__navbar__section__toggle__blog' : '' ?>">
+                <div class="header__navbar__section__toggle<?= is_page('Blog') || is_page('Simulador') || is_category() || is_single() ? ' header__navbar__section__toggle__blog' : '' ?>">
                     <p>
                         <span></span>
                         <img src="<?= image('vetor-menu.svg'); ?>" alt="Vetor - <?= SITE['name']; ?>" loading="lazy">

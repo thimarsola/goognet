@@ -24,7 +24,7 @@
                         </header>
                         <!-- end of header -->
 
-                        <p>A divulgação no Feed através do <b>Facebook Ads</b> é muito importante pois tem alguns benéficos como compartilhamento entre os usuários e a possibilidade de curtidas e comentários na imagem/vídeo divulgado. Assim você poderá acompanhar e interagir com seus clientes.</p>
+                        <p>A divulgação no Feed através do <b>Facebook Ads</b> é muito importante pois tem alguns benéficos como compartilhamento entre os usuários e a possibilidade de curtidas e comentários na imagem/vídeo divulgada. Assim você poderá acompanhar e interagir com seus clientes.</p>
 
                     </article>
                     <!-- end of article -->

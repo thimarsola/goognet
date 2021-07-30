@@ -1,0 +1,19 @@
+@use "../../abstracts" as *;
+
+.notes{
+    @include padding(var(--fs-1000));
+    background-color: #f8f8f8;
+
+    &__header{
+        margin-bottom: var(--fs-200);
+
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}

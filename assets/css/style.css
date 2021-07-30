@@ -1819,7 +1819,7 @@ img.mfp-img {
   .hero__vetor__two {
     position: absolute;
     left: 2rem;
-    bottom: 12rem;
+    bottom: 8rem;
   }
   @keyframes greenCircle {
     from {
@@ -2380,7 +2380,7 @@ img.mfp-img {
 }
 
 .cta {
-  padding: var(--fs-1000) 0;
+  padding: var(--fs-700) 0;
   background-image: url("../images/background-cta.svg");
   background-size: cover;
   background-position: center;
@@ -2390,12 +2390,11 @@ img.mfp-img {
   margin: 0 auto;
   max-width: 80rem;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 .cta__row__header {
-  font-size: var(--fs-600);
+  margin-bottom: var(--fs-400);
+  font-size: var(--fs-500);
 }
 @media only screen and (max-width: 1440px) {
   .cta {
@@ -2406,13 +2405,6 @@ img.mfp-img {
   .cta {
     background-size: cover;
     background-position: center right;
-  }
-  .cta__row {
-    display: block;
-    text-align: center;
-  }
-  .cta__row__header {
-    margin-bottom: var(--fs-500);
   }
 }
 
@@ -2536,7 +2528,6 @@ img.mfp-img {
   background: var(--clr-white-500);
   border-radius: 1rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  text-align: justify;
 }
 .faq__content__row__card__header {
   margin-bottom: var(--fs-200);

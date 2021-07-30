@@ -1,0 +1,131 @@
+@use "../../abstracts" as *;
+
+.result{
+    @include padding(var(--fs-1000));
+    background-color: var(--clr-gray-500);
+
+    &__content{
+
+        &__row{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 3fr 4fr 3fr;
+            gap: var(--gap-lg);
+
+            &__image{
+                align-self: center;
+            }
+
+            &__information{
+                div{
+                    &:not(:last-child){
+                        margin-bottom: var(--fs-300);
+                    }
+                }
+
+                h3{
+                    margin-bottom: var(--fs-100);
+                }
+
+                p{
+                    font-size: var(--fs-300);
+                    line-height: 1;
+                }
+            }
+
+            &__roi{
+                display: flex;
+                justify-content: center;
+
+                &__container{
+
+                    &__header{
+                        margin-bottom: var(--fs-100);
+                        font-size: var(--fs-400);
+                    }
+
+                    p{
+                        font-family: 'Poppins SemiBold', sans-serif !important;
+                        font-size: var(--fs-600);
+                        color: var(--clr-green-500);
+                        line-height: 1;
+                    }
+                }
+
+            }
+
+            &__cta{
+                &__header {
+                    margin-bottom: var(--fs-100);
+                }
+
+                p{
+                    margin-bottom: var(--fs-300);
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__content{
+            &__row{
+                grid-template-columns: repeat(5,1fr);
+                gap: calc(var(--gap-lg) * 2.5) var(--gap-lg);
+
+                &__image{
+                    justify-self: center;
+                    grid-column: 1/1;
+
+                    img{
+                        max-width: 90%;
+                    }
+                }
+
+                &__information{
+                    grid-column: 2/4;
+                }
+
+                &__roi{
+                    grid-column: 4/6;
+                }
+
+                &__cta{
+                    grid-column: 1/6;
+                }
+            }
+        }
+    }
+
+    //breakpoint mobile
+    @include mq(sm){
+        &__content{
+            &__row{
+                grid-template-columns: 1fr;
+                gap: var(--gap-lg);
+
+                &__image{
+                    justify-self: center;
+                    grid-column: 1/2;
+
+                    img{
+                        max-width: 80%;
+                    }
+                }
+
+                &__information{
+                    grid-column: 1/2;
+                }
+
+                &__roi{
+                    grid-column: 1/2;
+                }
+
+                &__cta{
+                    grid-column: 1/2;
+                }
+            }
+        }
+    }
+}

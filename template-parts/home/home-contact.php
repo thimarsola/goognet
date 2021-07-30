@@ -17,7 +17,7 @@
 
                 <form id="form" method="POST" enctype="multipart/form-data">
                     <!-- group -->
-                    <div class="contact__content__form__group">
+                    <div class="contact__row__content__form__group">
                         <label for="name" class="d-none">Nome Completo</label>
                         <input type="text" name="name" placeholder="Nome Completo" id="name" required>
                     </div>

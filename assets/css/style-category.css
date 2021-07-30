@@ -1232,6 +1232,12 @@ i {
 }
 .hero__row__card__body ul li {
   margin-right: var(--gap);
+  display: flex;
+  align-items: center;
+}
+.hero__row__card__body ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .hero__row__card__body ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1243,9 +1249,6 @@ i {
 .hero__row__card__body ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.hero__row__card__body ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .hero__row__card__body__header {
   margin-bottom: var(--fs-200);

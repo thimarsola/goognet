@@ -5,7 +5,7 @@
         <header class="agency__header">
             <h2>A melhor Agência de Marketing do Grande ABC!</h2>
             <p>
-                Somos 5 estrelas no Google
+                Somos <a rel="nofollow noreferrer noopener" href="https://g.page/Goognet/review?gm" target="_blank" title="Avalie-nos no google!">5 estrelas</a> no Google
                 <?php
                 for ($icon=1; $icon < 6; $icon++):
                     ?>

@@ -7,14 +7,15 @@
 
             <!-- header -->
             <header class="hero__row__content__header">
-                <p>Aumente suas presença digital</p>
+                <p>Aumente sua presença digital</p>
                 <h2>Desenvolvimento de <b>Website</b> personalizado</h2>
             </header>
             <!-- end of header -->
 
             <!-- body -->
             <div class="hero__row__content__body">
-                <p>Uma empresa que não está no mundo digital não existe! Um site não vende sozinho, ele é como uma loja física. As pessoas vão visitar, e você precisa atender e recepcionar da melhor forma possível.</p>
+                <p>Uma empresa que não está no mundo digital não existe! Independente do seu negocio possuir um espaço físico ou não, todo cliente inicia a busca de maneira digital, e através de um website bem desenvolvido, a chance de converter essa busca em venda se torna muito maior.
+                </p>
 
                 <a href="#sobre" class="btn btn-green-500" title="Conheça mais sobre este serviço">Conheça mais</a>
             </div>

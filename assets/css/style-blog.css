@@ -1352,6 +1352,12 @@ i {
 }
 .news__row__card ul li {
   margin-right: var(--gap);
+  display: flex;
+  align-items: center;
+}
+.news__row__card ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .news__row__card ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1363,9 +1369,6 @@ i {
 .news__row__card ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.news__row__card ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .news__row__card__header {
   margin-bottom: var(--fs-200);
@@ -1461,6 +1464,12 @@ i {
 }
 .featured__row__card__body ul li {
   margin-right: var(--gap);
+  display: flex;
+  align-items: center;
+}
+.featured__row__card__body ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .featured__row__card__body ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1472,9 +1481,6 @@ i {
 .featured__row__card__body ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.featured__row__card__body ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .featured__row__card__body__header {
   margin-bottom: var(--fs-200);
@@ -1570,6 +1576,12 @@ i {
 }
 .all__row__content__card__body ul li {
   margin-right: var(--gap);
+  display: flex;
+  align-items: center;
+}
+.all__row__content__card__body ul li:before {
+  content: "#";
+  color: var(--clr-green-500);
 }
 .all__row__content__card__body ul li a {
   font-family: "Poppins SemiBold", sans-serif !important;
@@ -1581,9 +1593,6 @@ i {
 .all__row__content__card__body ul li a:hover {
   color: var(--clr-green-500);
   transition: color 300ms ease-in-out;
-}
-.all__row__content__card__body ul li a span {
-  color: var(--clr-green-500) !important;
 }
 .all__row__content__card__body__header {
   margin-bottom: var(--fs-200);

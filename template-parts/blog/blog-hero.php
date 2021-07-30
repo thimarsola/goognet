@@ -12,7 +12,7 @@
 
             <!-- body -->
             <div class="hero__content__container__body">
-                <p>Blog da Goog! Conteúdos sobre <span><b>Marketing Digital?</b></span></p>
+                <p>Blog da Goog! Conteúdos sobre <span><b>Marketing Digital!</b></span></p>
 
                 <a href="#publicacao-recente">
                     <span>
