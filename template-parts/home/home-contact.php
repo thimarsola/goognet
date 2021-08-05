@@ -54,7 +54,7 @@
 
                     <!-- button -->
                     <div class="contact__row__content__form__button">
-                        <button id="button" class="btn btn-green-500" type="submit" name="submit" value="submit">Enviar</button>
+                        <button id="button-contact" class="btn btn-green-500" type="submit" name="submit" value="submit">Enviar</button>
                     </div>
                     <!-- end of button -->
                 </form>

@@ -30,6 +30,7 @@
 
             &__toggle{
                 color: var(--clr-white-500);
+                cursor: pointer !important;
                 @include transition(color);
 
                 p{
@@ -47,7 +48,7 @@
                     }
 
                     &:hover, &:focus{
-                        color: var(--clr-green-500);
+                        color: var(--clr-green-500) !important;
                         @include transition(color);
 
                         img{
@@ -98,6 +99,7 @@
         @include transition(background);
 
         .header__navbar__section__toggle{
+            cursor: pointer !important;
             color: var(--clr-neutral-500) !important;
             @include transition(color);
         }
@@ -114,7 +116,8 @@
                     color: var(--clr-white-500) !important;
 
                     p{
-                        color: inherit !important;
+                        color: inherit;
+                        @include transition(color);
 
                         span{
                             &::after{

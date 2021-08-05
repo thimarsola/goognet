@@ -99,13 +99,13 @@
                     <div class="data__content__group__row">
                         <!-- header -->
                         <div class="data__content__group__row__header">
-                            <label for=ticket">Defina qual é o ticket médio de venda (R$) pelo seu produto ou serviço.</label>
+                            <label for="ticket">Defina qual é o ticket médio de venda (R$) pelo seu produto ou serviço.</label>
                         </div>
                         <!-- end of header -->
 
                         <!-- content -->
                         <div class="data__content__group__row__content">
-                            <input id=ticket" name="ticket" type="number" value="10"/>
+                            <input id="ticket" name="ticket" type="number" value="10"/>
                         </div>
                         <!-- end of content -->
                     </div>

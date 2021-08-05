@@ -1,0 +1,106 @@
+@use "../../abstracts" as *;
+
+.goals{
+    @include padding(var(--fs-400));
+    background:{
+        image: url("../images/background-consultoria.svg");
+        size: cover;
+        position: center;
+    }
+
+    &__row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-lg);
+
+        &__positive{
+            &__header{
+                margin-bottom: var(--fs-500);
+
+                h2{
+                    font-size: var(--fs-400);
+
+                    span{
+                        padding: 0 var(--fs-100);
+                        color: var(--clr-white-500) !important;
+                        background-color: #49BC69;
+                    }
+                }
+            }
+
+            li{
+                &:not(:last-child){
+                    margin-bottom: var(--fs-200);
+                }
+
+                &::before{
+                    margin-right: var(--fs-100);
+                    content: '\2714';
+                    color: #49BC69;
+                }
+            }
+        }
+
+        &__negative{
+            &__header{
+                margin-bottom: var(--fs-500);
+
+                h2{
+                    font-size: var(--fs-400);
+
+                    span{
+                        padding: 0 var(--fs-100);
+                        color: var(--clr-white-500) !important;
+                        background-color: #FE5751;
+                    }
+                }
+            }
+
+            li{
+                &:not(:last-child){
+                    margin-bottom: var(--fs-200);
+                }
+
+                &::before{
+                    margin-right: var(--fs-100);
+                    content: '\2718';
+                    color: #FE5751;
+                }
+            }
+        }
+    }
+
+    //breakpoint 1112px
+    @include bp(1112px){
+        &__row{
+            &__positive{
+                &__header{
+                    margin-bottom: var(--fs-400);
+
+                    h2{
+                        font-size: var(--fs-300);
+                    }
+                }
+            }
+
+            &__negative{
+                &__header{
+                    margin-bottom: var(--fs-400);
+
+                    h2{
+                        font-size: var(--fs-300);
+                    }
+                }
+            }
+        }
+    }
+
+    //breakpoint tablet
+    @include mq(md){
+        &__row{
+            grid-template-columns: 1fr;
+            gap: calc(var(--gap-lg) * 1.5);
+        }
+    }
+}

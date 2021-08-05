@@ -12,6 +12,10 @@
 <?php get_template_part('template-parts/simulator/simulator', 'result'); ?>
 <!-- end of result -->
 
+<!-- result -->
+<?php get_template_part('template-parts/simulator/simulator', 'modal'); ?>
+<!-- end of result -->
+
 <!-- notes -->
 <?php get_template_part('template-parts/simulator/simulator', 'notes'); ?>
 <!-- end of notes -->

@@ -4,16 +4,16 @@
         <div class="header__navbar">
             <!-- brand -->
             <?php
-                if(is_page() || is_category() || is_single()):
-            ?>
-                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
-                    <img src="<?= image('logo-primario.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
-                </a>
-            <?php
-                else:
+                if(is_page('Consultoria') || is_home()):
             ?>
                 <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
                     <img src="<?= image('logo.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
+                </a>
+            <?php
+                elseif(is_page() || is_category() || is_single() ):
+            ?>
+                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
+                    <img src="<?= image('logo-primario.svg') ?>" alt="Logo <?= SITE['name']; ?>>" loading="lazy">
                 </a>
             <?php endif; ?>
             <!-- end of brand -->

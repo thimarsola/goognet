@@ -50,6 +50,13 @@ $singleCss->add(dirname(__DIR__, 1) . "/assets/css/style-single.css");
 $singleCss->minify(dirname(__DIR__, 1) . "/assets/css/style-single.min.css");
 
 /**
+ * CONSULTANCY CSS
+ */
+$consultancyCss = new MatthiasMullie\Minify\CSS();
+$consultancyCss->add(dirname(__DIR__, 1) . "/assets/css/style-consultancy.css");
+$consultancyCss->minify(dirname(__DIR__, 1) . "/assets/css/style-consultancy.min.css");
+
+/**
  * 404
  */
 $errorCss = new MatthiasMullie\Minify\CSS();
@@ -121,6 +128,8 @@ $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
 $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/animation.js");
 $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/visor.js");
 $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/request.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/request-sender.js");
+$simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $simulatorJs->minify(dirname(__DIR__, 1) . "/assets/js/script-simulator.min.js");
 
 /**
@@ -131,6 +140,17 @@ $singleJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
 $singleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
 $singleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
 $singleJs->minify(dirname(__DIR__, 1) . "/assets/js/script-single.min.js");
+
+/**
+ * CONSULTANCY JS
+ */
+$consultancyJs = new MatthiasMullie\Minify\JS();
+$consultancyJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$consultancyJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$consultancyJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/sticky.js");
+$consultancyJs->add(dirname(__DIR__, 1) . "/assets/js/theme/consultancy/request.js");
+$consultancyJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
+$consultancyJs->minify(dirname(__DIR__, 1) . "/assets/js/script-consultancy.min.js");
 
 /**
  * Error

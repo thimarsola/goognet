@@ -1,5 +1,10 @@
 <section class="simulator" id="simulador">
     <div class="container">
+        <!-- cta -->
+        <div class="simulator__cta">
+            <p>Qual seria o retorno da minha empresa se eu investisse no <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>?</p>
+        </div>
+        <!-- end of cta -->
 
         <!-- row -->
         <div class="simulator__row">
@@ -23,7 +28,7 @@
                 <!-- body -->
                 <div class="simulator__row__content__body">
                     <p>Esse é um simulador com dados retirados das <span><b>Ferramentas Google</b></span>, onde podemos mostrar possíveis cenários de quantidades de pessoas pesquisando pelo seu segmento,  retorno do investimento e muito mais!</p>
-                    <?= whatsapp(formatPhone(CONTACT["whatsapp"]["number"]), CONTACT["whatsapp"]["messageSimulator"], 'Simule seu sucesso', 'btn btn-green-500', 'Simule o seu sucesso'); ?>
+                    <a href="<?= get_permalink(get_page_by_title('Simulador')); ?>" class="btn btn-green-500" target="_blank" title="Simule seu sucesso no Google">Simule o seu sucesso</a>
                 </div>
                 <!-- end of body -->
             </div>
