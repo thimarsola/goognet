@@ -1,0 +1,76 @@
+@use "../../abstracts" as *;
+
+.form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &__content{
+        margin: auto;
+        position: relative;
+        max-width: 58rem;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 30px rgba(#000, .3);
+
+        &__header{
+            width: 100%;
+            padding: var(--gap);
+            text-align: center;
+            color: var(--clr-white-500);
+            background-color: var(--clr-neutral-500);
+        }
+
+        form{
+            padding: var(--gap);
+            background-color: var(--clr-white-500);
+        }
+
+        &__group{
+            &:not(:last-child){
+                margin-bottom: var(--fs-100);
+            }
+
+            &__button{
+                text-align: right;
+                margin-top: var(--fs-200);
+            }
+
+            &__status{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: var(--fs-300) 0;
+
+                &--loading{
+                    img {
+                        animation: spin 2s infinite linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swal2-loader {
+    border-color: #87EA00 transparent #518c00 !important;
+    outline: none;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #87EA00 !important;
+    transition: all 300ms ease-in-out;
+
+
+    &:hover {
+        background-color: darken(#87EA00, 10%) !important;
+        transition: all 300ms ease-in-out;
+    }
+}

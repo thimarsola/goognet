@@ -1,6 +1,9 @@
 <section class="data">
     <div class="container">
 
+        <?php
+            if(is_page('Simulador')):
+        ?>
         <!-- header -->
         <header class="data__header">
             <h2>Simule seu retorno investindo no Google</h2>
@@ -9,6 +12,15 @@
                 mais!</p>
         </header>
         <!-- end of header -->
+        <?php
+            elseif (is_page('Simulador Google')):
+        ?>
+        <!-- header -->
+        <header class="data__header d-none">
+            <h2>Simule seu retorno divulgando no Google</h2>
+        </header>
+        <!-- end of header -->
+        <?php endif; ?>
 
         <!-- content -->
         <div class="data__content">

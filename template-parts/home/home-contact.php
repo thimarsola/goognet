@@ -45,8 +45,8 @@
                     <!-- end of group -->
 
                     <!-- status -->
-                    <div class="contact__row__content__form__status">
-                        <div class="d-none contact__row__content__form__status--loading">
+                    <div class="contact__row__content__form__status d-none">
+                        <div class="contact__row__content__form__status--loading">
                             <img src="<?= image('spinner.svg'); ?>" alt="Carregando" loading="lazy">
                         </div>
                     </div>

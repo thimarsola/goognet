@@ -13,6 +13,8 @@ function loadCSS()
         wp_enqueue_style('projects', get_template_directory_uri() . '/assets/css/style-projects.min.css', [], '1.0.3', 'all');
     }elseif (is_page('Simulador')){
         wp_enqueue_style('simulator', get_template_directory_uri() . '/assets/css/style-simulator.min.css', [], '1.0.3', 'all');
+    }elseif (is_page('Simulador Google')){
+        wp_enqueue_style('simulator-google', get_template_directory_uri() . '/assets/css/style-simulator-google.min.css', [], '1.0.0', 'all');
     }elseif (is_page('Consultoria')){
         wp_enqueue_style('consultancy', get_template_directory_uri() . '/assets/css/style-consultancy.min.css', [], '1.0.0', 'all');
     }elseif (is_page()){

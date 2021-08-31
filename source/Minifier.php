@@ -43,6 +43,13 @@ $simulatorCss->add(dirname(__DIR__, 1) . "/assets/css/style-simulator.css");
 $simulatorCss->minify(dirname(__DIR__, 1) . "/assets/css/style-simulator.min.css");
 
 /**
+ * SIMULATOR GOOGLE CSS
+ */
+$simulatorGoogleCss = new MatthiasMullie\Minify\CSS();
+$simulatorGoogleCss->add(dirname(__DIR__, 1) . "/assets/css/style-simulator-google.css");
+$simulatorGoogleCss->minify(dirname(__DIR__, 1) . "/assets/css/style-simulator-google.min.css");
+
+/**
  * SINGLE CSS
  */
 $singleCss = new MatthiasMullie\Minify\CSS();
@@ -131,6 +138,19 @@ $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/request.js")
 $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/request-sender.js");
 $simulatorJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $simulatorJs->minify(dirname(__DIR__, 1) . "/assets/js/script-simulator.min.js");
+
+/**
+ * SIMULATOR GOOGLE JS
+ */
+$simulatorGoogleJs = new MatthiasMullie\Minify\JS();
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/sticky.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator/visor.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator-google/request.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/theme/simulator-google/request-sender.js");
+$simulatorGoogleJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
+$simulatorGoogleJs->minify(dirname(__DIR__, 1) . "/assets/js/script-simulator-google.min.js");
 
 /**
  * SINGLE JS
