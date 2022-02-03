@@ -1,4 +1,4 @@
-</main>
+    </main>
 <!-- end of main -->
 
 <!-- footer -->
@@ -124,7 +124,7 @@
                             $urlBase = str_replace($protocols, "", get_bloginfo('wpurl'));
                         }elseif(is_single()){
                             $urlBase = str_replace($protocols, "", get_the_permalink());
-                        }
+                        } 
                         else {
                             $urlBase = str_replace($protocols, "", get_bloginfo('wpurl')) . '/' . (get_page_uri());
                         }
@@ -147,6 +147,12 @@
 <!-- end of footer -->
 
 <?php wp_footer(); ?>
+
+<?php if(is_page('Blog') || is_single()): ?>
+    <!-- mailchimp -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2ffc808ae3e075aedbd20f03e/292728e64c03dd3529cd2d9e1.js");</script>
+    <!-- end of mailchimp -->
+<?php endif; ?>
 
 </body>
 

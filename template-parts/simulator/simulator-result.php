@@ -57,10 +57,10 @@
                             }
 
                             if( $numberClicks <= $structure['clicks']){
-                                echo number_format($numberClicks, 0, ',', '.') . ' acessos';
+                                echo number_format($numberClicks, 0, ',', '.') . ' acessos' . '<sup>*</sup>';
                             }else{
                                 $numberClicks = $structure['clicks'];
-                                echo number_format($numberClicks, 0, ',', '.') . ' acessos';
+                                echo number_format($numberClicks, 0, ',', '.') . ' acessos' . '<sup>*</sup>';
                             }
                             ?>
                         </p>
@@ -79,9 +79,9 @@
                             $numberBudget = $numberClicks / 10;
 
                             if( $numberBudget <= 1){
-                                echo number_format($numberBudget, 0, ',', '.') . ' orçamento';
+                                echo number_format($numberBudget, 0, ',', '.') . ' orçamento' . '<sup>*</sup>';
                             }else{
-                                echo number_format($numberBudget, 0, ',', '.') . ' orçamentos';
+                                echo number_format($numberBudget, 0, ',', '.') . ' orçamentos' . '<sup>*</sup>';
                             }
                             ?>
                         </p>
@@ -101,9 +101,9 @@
                                 $numberSales = $numberBudget * ($sales/10);
 
                                 if( $numberSales <= 1){
-                                    echo number_format($numberSales, 0, ',', '.') . ' venda';
+                                    echo number_format($numberSales, 0, ',', '.') . ' venda' . '<sup>*</sup>';
                                 }else{
-                                    echo number_format($numberSales, 0, ',', '.') . ' vendas';
+                                    echo number_format($numberSales, 0, ',', '.') . ' vendas' . '<sup>*</sup>';
                                 }
                             }
                             ?>
@@ -128,7 +128,7 @@
                             if($ticket != null){
                                 $roi = $numberSales * $ticket;
 
-                                echo 'R$' . number_format($roi, 2, ',', '.');
+                                echo 'R$' . number_format($roi, 2, ',', '.') . '<sup>*</sup>';
                             }
                             ?>
                         </p>

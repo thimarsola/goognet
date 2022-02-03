@@ -99,6 +99,11 @@
             "category": "Vidraçaria",
             "clicks": 1900,
             "cpc": 1.09
+        },
+        {
+            "category": "Outros",
+            "clicks": 2250,
+            "cpc": 1.19
         }
     ]
 }

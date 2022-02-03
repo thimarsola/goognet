@@ -24,8 +24,6 @@
             echo SITE['name'];
         }elseif (is_category()){
             echo single_cat_title() . " - " . SITE["name"];;
-        }elseif (is_404()){
-            echo SITE['name'];
         }else{
             echo get_the_title() . " - " . SITE["name"];
         }
@@ -62,7 +60,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
     <meta property="og:description" content="<?= SITE["desc"]; ?>">
-    <meta property="og:site_name" content="<?= SITE["name"] ?>"> <?php wp_head(); ?>
+    <meta property="og:site_name" content="<?= SITE["name"] ?>"> 
 
     <!-- SCHEMA.ORG -->
     <meta itemprop="name" content="<?= SITE["name"] ?>">
@@ -77,6 +75,35 @@
     <meta name="twitter:description" content="<?= SITE["desc"]; ?>"/>
     <meta name="twitter:image" content="<?= get_template_directory_uri(); ?>/assets/images/goognet.png" />
     <meta name="twitter:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>"/>
+
+    <?php wp_head(); ?>
+    <?php  if(is_single()): ?>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "NewsArticle",
+                "headline": "<?= get_the_title(); ?>",
+                "image": [
+                    "<?= get_the_post_thumbnail_url('');?>"
+                ],
+                "datePublished": "<?= the_time('c');?>",
+                "dateModified": "<?= the_modified_time('c');?>",
+                "author": {
+                    "@type": "Person",
+                    "name": "Goognet Solução Digital",
+                    "url": "https://goognet.com.br"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Goognet Solução Digital",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "<?= image('logo-primario.svg'); ?>"
+                    }
+                }
+            }
+        </script>
+    <?php endif; ?>
 </head>
 
 <body id="home" >

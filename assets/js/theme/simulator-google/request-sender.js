@@ -9,21 +9,23 @@ $(document).ready(function () {
         $('.form__content__group__status').removeClass('d-none');
 
         $.ajax({
-           url: pathSender.concat(fileSender),
-           type: 'POST',
-           cache: false,
-           data: $('#form-simulator').serialize(),
+            url: pathSender.concat(fileSender),
+            type: 'POST',
+            cache: false,
+            data: $('#form-simulator').serialize(),
             success: function(data){
-               $('.form').html(data);
+                $('.form').html(data);
 
-               setTimeout(function(){
-                   $('.form__content__group__status').addClass('d-none');
-                   $('.form').addClass('d-none');
-                   $('.result__content__row').css('filter', 'none');
-               }, 3000);
+                setTimeout(function(){
+                    if(!$('.form').hasClass('error')){
+                        $('.form__content__group__status').addClass('d-none');
+                        $('.form').addClass('d-none');
+                        $('.result__content__row').css('filter', 'none');
+                    }
+                }, 3000);
             },
             error: function (){
-               $('.form').html('Erro ao enviar')
+                $('.form').html('Erro ao enviar');
             }
         });
         return false;

@@ -25,7 +25,7 @@
             $argBehance = [
                 "post_type" => "projetos",
                 "posts_per_page" => 3,
-                "order" => "ASC"
+                "order" => "DESC"
             ];
 
             $theQueryBehance = new WP_Query($argBehance);

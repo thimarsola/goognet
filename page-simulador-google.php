@@ -5,7 +5,7 @@
 <!-- end of hero -->
 
 <!-- data -->
-<?php get_template_part('template-parts/simulator/simulator', 'data'); ?>
+<?php get_template_part('template-parts/simulator-google/simulator', 'data'); ?>
 <!-- end of data -->
 
 <!-- result -->
@@ -21,7 +21,7 @@
     <!-- end of result -->
 
 <!-- notes -->
-<?php get_template_part('template-parts/simulator/simulator', 'notes'); ?>
+<?php get_template_part('template-parts/simulator-google/simulator', 'notes'); ?>
 <!-- end of notes -->
 
 <?php get_footer(); ?>
