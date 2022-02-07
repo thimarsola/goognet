@@ -16,6 +16,10 @@
 <?php get_template_part('template-parts/home/home', 'simulator'); ?>
 <!-- end of simulator -->
 
+<!-- google partner -->
+<?php get_template_part('template-parts/home/home', 'google-partner'); ?>
+<!-- end of google partner -->
+
 <!-- results -->
 <?php get_template_part('template-parts/home/home', 'results'); ?>
 <!-- end of results -->

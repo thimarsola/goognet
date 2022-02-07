@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.partner{
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  z-index: 100;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 3rem rgba(#000, .15);
+
+  &__content{
+    a{
+      display: block;
+      width: 12rem;
+      transform-origin: left bottom;
+      transform: scale(1);
+      @include transition(transform);
+
+      &:hover{
+        transform: scale(.98);
+        @include transition(transform);
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
