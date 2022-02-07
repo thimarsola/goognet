@@ -1,5 +1,5 @@
 {
-  "partners-top": [
+  "partners": [
     {
       "name": "Google Partner",
       "image": "parceiro-google"
@@ -15,10 +15,7 @@
     {
       "name": "Parceiro Tray Commerce",
       "image": "parceiro-tray"
-    }
-  ],
-
-  "partners-bottom": [
+    },
     {
       "name": "Parceiro Loja Integrada",
       "image": "parceiro-loja-integrada"

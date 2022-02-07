@@ -3,4 +3,3 @@
         <?= whatsapp(formatPhone(CONTACT["whatsapp"]["number"]), CONTACT["whatsapp"]["message"], '<span class="d-none">WhatsApp</span><i class="goog-whatsapp"></i>'); ?>
     </div>
 </div>
-
