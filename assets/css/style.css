@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Poppins Regular";
   src: url("../font/Poppins/Poppins-Regular.ttf");
@@ -924,6 +923,30 @@ body {
   line-height: inherit;
 }
 
+.partner {
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  z-index: 100;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15);
+}
+.partner__content a {
+  display: block;
+  width: 12rem;
+  transform-origin: left bottom;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+.partner__content a:hover {
+  transform: scale(0.98);
+  transition: transform 300ms ease-in-out;
+}
+.partner__content a img {
+  width: 100%;
+}
+
 .footer {
   position: relative;
 }
@@ -1053,99 +1076,342 @@ i {
 }
 
 .goog-behance:before {
-  content: "";
+  content: "\e900";
 }
 
 .goog-briefing:before {
-  content: "";
+  content: "\e901";
 }
 
 .goog-clock:before {
-  content: "";
+  content: "\e902";
 }
 
 .goog-datas:before {
-  content: "";
+  content: "\e903";
 }
 
 .goog-facebook-link:before {
-  content: "";
+  content: "\e904";
 }
 
 .goog-facebook:before {
-  content: "";
+  content: "\e905";
 }
 
 .goog-instagram:before {
-  content: "";
+  content: "\e906";
 }
 
 .goog-investiment:before {
-  content: "";
+  content: "\e907";
 }
 
 .goog-left-arrow:before {
-  content: "";
+  content: "\e908";
 }
 
 .goog-link:before {
-  content: "";
+  content: "\e909";
 }
 
 .goog-linkedin-link:before {
-  content: "";
+  content: "\e90a";
 }
 
 .goog-linkedin:before {
-  content: "";
+  content: "\e90b";
 }
 
 .goog-logo:before {
-  content: "";
+  content: "\e90c";
 }
 
 .goog-mail:before {
-  content: "";
+  content: "\e90d";
 }
 
 .goog-meta:before {
-  content: "";
+  content: "\e90e";
 }
 
 .goog-otimization:before {
-  content: "";
+  content: "\e90f";
 }
 
 .goog-phone:before {
-  content: "";
+  content: "\e910";
 }
 
 .goog-play:before {
-  content: "";
+  content: "\e911";
 }
 
 .goog-star:before {
-  content: "";
+  content: "\e912";
 }
 
 .goog-target:before {
-  content: "";
+  content: "\e913";
 }
 
 .goog-twitter-link:before {
-  content: "";
+  content: "\e914";
 }
 
 .goog-Vector:before {
-  content: "";
+  content: "\e915";
 }
 
 .goog-w3c:before {
-  content: "";
+  content: "\e916";
 }
 
 .goog-whatsapp:before {
-  content: "";
+  content: "\e917";
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+  	This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+  	calculation of the height of the owl-item that breaks product layouts
+   */
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+  max-height: 0;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 /* Magnific Popup CSS */
@@ -2127,6 +2393,93 @@ img.mfp-img {
   }
 }
 
+.google {
+  padding-bottom: 12rem;
+  color: #3c4043;
+}
+.google__header {
+  background: #f1f3f4;
+}
+.google__header::before {
+  display: block;
+  width: 100%;
+  height: 12px;
+  content: "";
+  background-image: url("../images/vetor-google.svg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+.google__header__wrapper {
+  padding: var(--fs-700) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+.google__header__wrapper h2 {
+  margin-bottom: var(--fs-100);
+  font-size: var(--fs-500);
+}
+.google__header__wrapper h2 span:nth-child(1), .google__header__wrapper h2 span:nth-child(4) {
+  color: var(--clr-g-blue-500);
+}
+.google__header__wrapper h2 span:nth-child(2), .google__header__wrapper h2 span:nth-child(6) {
+  color: var(--clr-g-red-500);
+}
+.google__header__wrapper h2 span:nth-child(3) {
+  color: var(--clr-g-yellow-500);
+}
+.google__header__wrapper h2 span:nth-child(5) {
+  color: var(--clr-g-green-500);
+}
+.google__header__wrapper h2 b {
+  font-family: "Poppins Regular", sans-serif !important;
+}
+.google__header__wrapper p {
+  font-size: var(--fs-300);
+}
+.google__header__wrapper .btn {
+  align-self: center;
+}
+.google__row {
+  margin-top: var(--fs-1000);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: var(--gap-lg);
+}
+.google__row__card {
+  padding: var(--gap-lg);
+  background: var(--clr-white-500);
+  border: 2px solid #a9acaa;
+  border-radius: 1rem;
+}
+.google__row__card__icon {
+  margin-bottom: var(--fs-100);
+}
+.google__row__card__icon svg {
+  width: var(--fs-700) !important;
+}
+.google__row__card__header {
+  margin-bottom: var(--fs-200);
+}
+.google__row__card__header h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+.google__row__card__body {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.google__row__card__body strong {
+  color: #3367d6 !important;
+}
+@media only screen and (max-width: 576px) {
+  .google__header h2 {
+    font-size: 3.4rem;
+  }
+}
+
 .results {
   padding: 12rem 0;
   position: relative;
@@ -2345,65 +2698,45 @@ img.mfp-img {
 .partners__header {
   margin-bottom: var(--fs-400);
   font-size: var(--fs-500);
-  padding-left: var(--fs-1000);
 }
-.partners__row__top, .partners__row__bottom {
-  max-width: 75%;
+.partners__row__card {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: var(--clr-white-500);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
-.partners__row__top__card, .partners__row__bottom__card {
-  width: 100%;
+  min-height: 23rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--fs-500) 0;
-}
-.partners__row__top__card:nth-child(odd), .partners__row__bottom__card:nth-child(odd) {
   background-color: #f8f8f8;
 }
-.partners__row__top__card img, .partners__row__bottom__card img {
+.partners__row__card img {
   margin: 0 auto;
   padding: 0;
   width: 80%;
 }
-.partners__row__bottom {
-  margin-top: var(--fs-500);
-  margin-left: auto;
+.partners .owl-dots {
+  text-align: center;
+  margin-top: var(--fs-400);
 }
-@media only screen and (max-width: 768px) {
-  .partners__row__top, .partners__row__bottom {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .partners__row__top__card, .partners__row__bottom__card {
-    min-height: 23rem;
-  }
-  .partners__row__top__card:nth-child(odd), .partners__row__bottom__card:nth-child(odd) {
-    background: none;
-  }
-  .partners__row__top__card:nth-child(1), .partners__row__top__card:nth-child(4), .partners__row__bottom__card:nth-child(1), .partners__row__bottom__card:nth-child(4) {
-    background-color: #f8f8f8;
-  }
-  .partners__row__top__card img, .partners__row__bottom__card img {
-    width: 90%;
-  }
+.partners .owl-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: var(--clr-neutral-500) !important;
+  margin: 0 var(--fs-100);
+  transition: background 300ms ease-in-out;
 }
-@media only screen and (max-width: 576px) {
-  .partners__header {
-    padding-left: 0;
-    padding-right: calc(var(--gap-lg) * 1.25);
-    text-align: right;
-  }
-  .partners__row__top, .partners__row__bottom {
-    max-width: calc(100% - var(--gap-lg) * 1.25);
-  }
-  .partners__row__top__card img, .partners__row__bottom__card img {
-    width: 70%;
-  }
+.partners .owl-dot:hover {
+  background: var(--clr-green-500) !important;
+  transition: background 300ms ease-in-out;
+}
+.partners .owl-dot.active {
+  width: 3rem;
+  background: var(--clr-green-500) !important;
+  transition: background 300ms ease-in-out;
 }
 
 .cta {

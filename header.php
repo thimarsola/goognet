@@ -140,5 +140,10 @@ if(!is_404()):
 <!-- whatsapp -->
 <?php get_template_part('template-parts/header/header', 'whatsapp'); ?>
 <!-- end of whatsapp -->
+
+<!-- partner -->
+<?php get_template_part('template-parts/header/header', 'partner'); ?>
+<!-- end of partner -->
+
 <!-- main -->
 <main> <?php endif ?>

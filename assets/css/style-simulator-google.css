@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Poppins Regular";
   src: url("../font/Poppins/Poppins-Regular.ttf");
@@ -924,6 +923,30 @@ body {
   line-height: inherit;
 }
 
+.partner {
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  z-index: 100;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15);
+}
+.partner__content a {
+  display: block;
+  width: 12rem;
+  transform-origin: left bottom;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+.partner__content a:hover {
+  transform: scale(0.98);
+  transition: transform 300ms ease-in-out;
+}
+.partner__content a img {
+  width: 100%;
+}
+
 .footer {
   position: relative;
 }
@@ -1053,99 +1076,99 @@ i {
 }
 
 .goog-behance:before {
-  content: "";
+  content: "\e900";
 }
 
 .goog-briefing:before {
-  content: "";
+  content: "\e901";
 }
 
 .goog-clock:before {
-  content: "";
+  content: "\e902";
 }
 
 .goog-datas:before {
-  content: "";
+  content: "\e903";
 }
 
 .goog-facebook-link:before {
-  content: "";
+  content: "\e904";
 }
 
 .goog-facebook:before {
-  content: "";
+  content: "\e905";
 }
 
 .goog-instagram:before {
-  content: "";
+  content: "\e906";
 }
 
 .goog-investiment:before {
-  content: "";
+  content: "\e907";
 }
 
 .goog-left-arrow:before {
-  content: "";
+  content: "\e908";
 }
 
 .goog-link:before {
-  content: "";
+  content: "\e909";
 }
 
 .goog-linkedin-link:before {
-  content: "";
+  content: "\e90a";
 }
 
 .goog-linkedin:before {
-  content: "";
+  content: "\e90b";
 }
 
 .goog-logo:before {
-  content: "";
+  content: "\e90c";
 }
 
 .goog-mail:before {
-  content: "";
+  content: "\e90d";
 }
 
 .goog-meta:before {
-  content: "";
+  content: "\e90e";
 }
 
 .goog-otimization:before {
-  content: "";
+  content: "\e90f";
 }
 
 .goog-phone:before {
-  content: "";
+  content: "\e910";
 }
 
 .goog-play:before {
-  content: "";
+  content: "\e911";
 }
 
 .goog-star:before {
-  content: "";
+  content: "\e912";
 }
 
 .goog-target:before {
-  content: "";
+  content: "\e913";
 }
 
 .goog-twitter-link:before {
-  content: "";
+  content: "\e914";
 }
 
 .goog-Vector:before {
-  content: "";
+  content: "\e915";
 }
 
 .goog-w3c:before {
-  content: "";
+  content: "\e916";
 }
 
 .goog-whatsapp:before {
-  content: "";
+  content: "\e917";
 }
 
 /* Magnific Popup CSS */

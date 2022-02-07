@@ -81,6 +81,8 @@ $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/scroll.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/counterup.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.counterup.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.waypoints.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/carousel.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/owl.carousel.min.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/sweetalert2.all.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/request.js");
 $homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/home/animation.js");
