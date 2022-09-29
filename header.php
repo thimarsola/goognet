@@ -13,10 +13,9 @@
     <meta charset="utf-8">
 
     <!--CANONICAL-->
-    <link rel="canonical" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" />
+    <link rel="canonical" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
     <base href="<?= get_site_url(); ?>">
-    <link rel="alternate" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" hreflang="x-default" />
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <link rel="alternate" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" hreflang="x-default">
 
     <title>
         <?php
@@ -35,10 +34,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- REGION -->
-    <meta name="geo.region" content="<?= REGION["region"]; ?>" />
-    <meta name="geo.placename" content="<?= REGION["placename"]; ?>" />
-    <meta name="geo.position" content="<?= REGION["position"]; ?>" />
-    <meta name="ICBM" content="<?= REGION["icbm"]; ?>" />
+    <meta name="geo.region" content="<?= REGION["region"]; ?>">
+    <meta name="geo.placename" content="<?= REGION["placename"]; ?>">
+    <meta name="geo.position" content="<?= REGION["position"]; ?>">
+    <meta name="ICBM" content="<?= REGION["icbm"]; ?>">
 
     <!-- ROBOTS -->
     <meta name="robots" content="index, follow">
@@ -50,7 +49,7 @@
     <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/images/favicon.png">
 
     <!-- OPEN GRAPH -->
-    <meta property="og:locale" content="<?= SITE["locale"]; ?>" />
+    <meta property="og:locale" content="<?= SITE["locale"]; ?>">
     <meta property="og:region" content="Brasil">
     <meta property="og:title" content="<?= SITE["name"] ?>">
     <meta property="og:image" content="<?= get_template_directory_uri(); ?>/assets/images/goognet.png">
@@ -69,14 +68,16 @@
     <meta itemprop="url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
 
     <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:domain" content="<?= DEV['domain']; ?>"/>
-    <meta name="twitter:title" content="<?= SITE["name"] ?>" />
-    <meta name="twitter:description" content="<?= SITE["desc"]; ?>"/>
-    <meta name="twitter:image" content="<?= get_template_directory_uri(); ?>/assets/images/goognet.png" />
-    <meta name="twitter:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>"/>
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="<?= DEV['domain']; ?>">
+    <meta name="twitter:title" content="<?= SITE["name"] ?>">
+    <meta name="twitter:description" content="<?= SITE["desc"]; ?>">
+    <meta name="twitter:image" content="<?= get_template_directory_uri(); ?>/assets/images/goognet.png">
+    <meta name="twitter:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
+    
+    <!-- Standard -->
     <?php wp_head(); ?>
+
     <?php  if(is_single()): ?>
         <script type="application/ld+json">
             {
