@@ -20,18 +20,6 @@ function disable_emojis(): void
 add_action('init', 'disable_emojis');
 
 /**
- * Filter out the tinymce emoji plugin.
- */
-function disable_emojis_tinymce($plugins): array
-{
-    if (is_array($plugins)) {
-        return array_diff($plugins, array('wpemoji'));
-    } else {
-        return array();
-    }
-}
-
-/**
  * Remove the block library CSS.
  */
 function dm_remove_wp_block_library_css(): void
