@@ -28,8 +28,11 @@ require_once get_template_directory() . '/inc/Excerpt.php';
 //PAGINATION SUPPORT
 require_once get_template_directory() . '/inc/Pagination.php';
 
-//SITEMAP SUPPORT
-require_once get_template_directory() . '/inc/Sitemap.php';
-
 //CUSTOM STHEME SUPPORT
 require_once get_template_directory() . '/inc/ThemeSupport.php';
+
+// Add support for generating a sitemap.
+require_once get_template_directory() . '/inc/Sitemap.php';
+
+// Disable certain WordPress functions.
+require_once get_template_directory() . '/inc/Wordpress.php';
